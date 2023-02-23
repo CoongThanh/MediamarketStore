@@ -10,9 +10,11 @@
 	<script src="js/popper.min.js"></script>
     <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet"/>
 	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-	
+    <link rel="stylesheet" href="./lib/slider/css/splide-core.min.css">
+    <link rel="stylesheet" href="./lib/slider/css/splide.min.css">
+    <link rel="stylesheet" href="./lib/slider/css/themes/splide-default.min.css">
+    <link rel="stylesheet" href="./lib/slider/css/themes/splide-sea-green.min.css">
+    <link rel="stylesheet" href="./lib/slider/css/themes/splide-skyblue.min.css">
     <link rel="stylesheet" href="css/style.css"/>
     <title>Mediamerket</title>
 </head>
@@ -86,20 +88,20 @@
                     <li><a href="">Shop by category</a></li>
                 </div>
                 <div class="col-sm-9 menu-btnmain ">
-                    <li><a href="">Home</a>
-                    <ul class="sub-menu">
-                        <li><a href="">VN</a></li>
-                    </ul> 
+                    <li><a href="" style="color:red">Home</a>
+                        <!-- <ul class="sub-menu">
+                            <li><a href="">VN</a></li>
+                        </ul>  -->
                     </li>
-                    <li><a href="">Shop</a></li>
+                    <li><a href="detail.html">Shop</a></li>
                     <li><a href="">Blog</a></li>
                     <li><a href="">Pages</a>
-                        <ul class="sub-menu">
+                        <!-- <ul class="sub-menu">
                             <li><a href="">Contact</a></li>
                             <li><a href="">FAQ</a></li>
                             <li><a href="">404 Page</a></li>
                             <li><a href="">Coming Soon</a></li>
-                        </ul> 
+                        </ul>  -->
                     </li>
                     <li><a href="">Products</a></li>
                     <li><a href="">Brains</a></li>
@@ -108,7 +110,42 @@
                     <a href=""><i class="menu-btnright fa-solid fa-ellipsis-vertical"></i></a>
                 </div>                    
             </div> 
-        </nav>                          
+        </nav>   
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>                        -->
     </header> 
     <main>  
         <div id="container-slideshow">
@@ -134,7 +171,7 @@
                                         </div>      
                                     </div>
                                     <div class="col-sm-7 item-active">
-                                        <img src="img/loabluetooth.png" alt="">
+                                       <img src="img/loabluetooth.png" alt="" width="100%">
                                     </div>
                                 </div>					
                             </div>
@@ -149,7 +186,7 @@
                                         </div>      
                                     </div>
                                     <div class="col-sm-7 item-active">
-                                        <img src="img/loabluetooth.png" alt="">
+                                       <img src="img/loabluetooth.png" alt="" width="100%">
                                     </div>
                                 </div>					
                             </div>
@@ -164,7 +201,7 @@
                                         </div>      
                                     </div>
                                     <div class="col-sm-7 item-active">
-                                        <img src="img/loabluetooth.png" alt="">
+                                       <img src="img/loabluetooth.png" alt="" width="100%">
                                     </div>
                                 </div>					
                             </div>
@@ -259,51 +296,73 @@
         </div>
         <div class="row deals-month">
             <div class="col-sm-4 sale">
-                <div class="deal">
-                    <a href=""><i class="fa-solid fa-angle-left"></i></a>
-                    <h1><b>Deals </b>of the month</h1>
-                    <a href=""><i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                <div class="product">
-                    <img src="img/flycam.png" alt="Loading...">
-                    <div class="price"> 
-                        <h1 class="price-sale">$169.95</h1>
-                        <strike class="price-cost">$269.00</strike>
-                    </div>  
-                    <div class="info">
-                        <p>ecobee3 lite Smart Thermostar</p>
-                    </div> 
-                    <div class="status">
-                        <div class="available">
-                            <p>Available: <b>7</b></p>
-                        </div>
-                        <div class="already">
-                            <p>Already Sold: <b>2</b></p>
-                        </div>
+                <section class="splide" aria-label="Restriction Example">
+                    <div class="splide__arrows" >
+                        <button class="splide__arrow splide__arrow--prev" style="margin-top: -82%;">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                        <button class="splide__arrow splide__arrow--next" style="margin-top: -82%;">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
                     </div>
-                </div>
-                <div class="end">
-                    <h1>Hury up!</h1>
-                    <p>Offer Ends In:</p>
-                </div>
-                <div class="row time-sale">   
-                    <div class="col-sm-3 ">
-                        <p>3</p>
-                        <b>days</b>
+                    <div class="splide__track">
+                      <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="deal">                            
+                                <h1><b>Deals </b>of the month</h1>                               
+                            </div>
+                            <div class="product-sale">
+                                <div class="deal-sale--green" style="position: absolute;">
+                                    <p class="deals-name">Sale</p>
+                                    <p class="deals-price">$99.00</p>
+                                </div>
+                                <img src="img/flycam.png" alt="Loading...">
+                                <div class="price"> 
+                                    <h1 class="price-sale">$169.95</h1>
+                                    <strike class="price-cost">$269.00</strike>
+                                </div>  
+                                <div class="info">
+                                    <p>ecobee3 lite Smart Thermostar</p>
+                                </div> 
+                                <div class="status">
+                                    <div class="available">
+                                        <p>Available: <b>7</b></p>
+                                    </div>
+                                    <div class="already">
+                                        <p>Already Sold: <b>2</b></p>
+                                    </div>
+                                </div>
+                                <div class="remaining-quantity-range">
+                                    <input type="range" value="7" disabled="">
+                                </div>
+                            </div>
+                            <div class="end">
+                                <h1>Hury up!</h1>
+                                <p>Offer Ends In:</p>
+                            </div>
+                            <div class="row time-sale">   
+                                <div class="col-sm-3 ">
+                                    <p class="day"></p>
+                                    <b>days</b>
+                                </div>
+                                <div class="col-sm-3">
+                                    <p class="hours"></p>
+                                    <b>hours</b>
+                                </div>
+                                <div class="col-sm-3">
+                                    <p class="minutes"></p>
+                                    <b>mins</b>
+                                </div>
+                                <div class="col-sm-3">
+                                    <p class="seconds"></p>
+                                    <b>secs</b>
+                                </div>
+                            </div>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="col-sm-3">
-                        <p>12</p>
-                        <b>hours</b>
-                    </div>
-                    <div class="col-sm-3">
-                        <p>37</p>
-                        <b>mins</b>
-                    </div>
-                    <div class="col-sm-3">
-                        <p>28</p>
-                        <b>secs</b>
-                    </div>
-                </div>
+                  </section>
+                
             </div>
             <div class="col-sm-8 list-sale">
                 <div class="row menu-product">
@@ -327,21 +386,21 @@
                                 <div class="product-list-sale">
                                     <div class="product">
                                         <img src="img/flycam.png" alt="Loading...">
-                                        <h3 class="price">$299.95</h3>                
+                                        <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
                                         </div> 
                                     </div>  
                                     <div class="product">
                                         <img src="img/flycam.png" alt="Loading...">
-                                        <h3 class="price">$299.95</h3>                
+                                        <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
                                         </div> 
                                     </div> 
                                     <div class="product">
                                         <img src="img/flycam.png" alt="Loading...">
-                                        <h3 class="price">$299.95</h3>                
+                                        <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
                                         </div> 
@@ -349,47 +408,53 @@
                                 </div>   
                                 <div class="product-list-sale">
                                     <div class="product">
+                                        <div class="deal-sale--yelllow" style="position: absolute;">                                          
+                                            <p class="deals-price">-35%</p>
+                                        </div>
                                         <img src="img/flycam.png" alt="Loading...">
-                                        <h3 class="price">$299.95</h3>                
+                                        <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
                                         </div> 
                                     </div>  
                                     <div class="product">
                                         <img src="img/flycam.png" alt="Loading...">
-                                        <h3 class="price">$299.95</h3>                
+                                        <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
                                         </div> 
                                     </div> 
                                     <div class="product">
+                                        <div class="deal-sale--red" style="position: absolute;">                                          
+                                            <p class="deals-price">Hot</p>
+                                        </div>
                                         <img src="img/flycam.png" alt="Loading...">
-                                        <h3 class="price">$299.95</h3>                
+                                        <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
                                         </div> 
                                     </div> 
                                 </div>  				
                             </div>
-                            <div class="carousel-item">
+                            <!-- <div class="carousel-item">
                                 <div class="product-list-sale">
                                     <div class="product">
                                         <img src="img/flycam.png" alt="Loading...">
-                                        <h3 class="price">$299.95</h3>                
+                                        <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
                                         </div> 
                                     </div>  
                                     <div class="product">
                                         <img src="img/flycam.png" alt="Loading...">
-                                        <h3 class="price">$299.95</h3>                
+                                        <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
                                         </div> 
                                     </div> 
                                     <div class="product">
                                         <img src="img/flycam.png" alt="Loading...">
-                                        <h3 class="price">$299.95</h3>                
+                                        <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
                                         </div> 
@@ -398,21 +463,21 @@
                                 <div class="product-list-sale">
                                     <div class="product">
                                         <img src="img/flycam.png" alt="Loading...">
-                                        <h3 class="price">$299.95</h3>                
+                                        <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
                                         </div> 
                                     </div>  
                                     <div class="product">
                                         <img src="img/flycam.png" alt="Loading...">
-                                        <h3 class="price">$299.95</h3>                
+                                        <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
                                         </div> 
                                     </div> 
                                     <div class="product">
                                         <img src="img/flycam.png" alt="Loading...">
-                                        <h3 class="price">$299.95</h3>                
+                                        <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
                                         </div> 
@@ -466,7 +531,7 @@
                                         </div> 
                                     </div> 
                                 </div>        			
-                            </div>
+                            </div> -->
                         </div>
                         <ul class="carousel-indicators">
                             <li data-target="#pic-month" data-slide-to="0" class="active"></li>
@@ -490,109 +555,121 @@
                 <div class="col-md-6 title-header">
                         <h1><b>Best Sellers </b>Products</h1> 
                 </div>
-                <div class="col-md-6 change">
-                    <a href=""><i class="fa-solid fa-angle-left"></i></a>
-                    <a href=""><i class="fa-solid fa-angle-right"></i></a>
-                </div>
             </div>
             <div class="row list-product">
-                <div class="product">
-                    <div class="product-tool">
-                        <div class="change-hover-hot" style="position: absolute;">
-                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                        </div>
-                        <img src="img/flycam.png" alt="Loading..."> 
+                <section class="splide-best-seller" aria-label="Restriction Example">
+                    <div class="splide__arrows">
+                        <button class="splide__arrow splide__arrow--prev">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                        <button class="splide__arrow splide__arrow--next">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
                     </div>
-                    <div class="price"> 
-                        <h3 class="price-sale">$169.95</h3>
-                        <strike class="price-cost">$269.00</strike>
-                    </div>  
-                    <div class="info">
-                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                    </div> 
-                </div>
-                <div class="product">
-                    <div class="product-tool">
-                        <div class="change-hover-hot" style="position: absolute;">
-                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                        </div>
-                        <img src="img/flycam.png" alt="Loading..."> 
-                    </div>
-                    <div class="price"> 
-                        <h3 class="price-sale">$169.95</h3>
-                        <strike class="price-cost">$269.00</strike>
-                    </div>  
-                    <div class="info">
-                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                    </div> 
-                </div>
-                <div class="product">
-                    <div class="product-tool">
-                        <div class="change-hover-hot" style="position: absolute;">
-                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                        </div>
-                        <img src="img/flycam.png" alt="Loading...">
-                    </div>
-                    <div class="price"> 
-                        <h3 class="price-sale">$169.95</h3>
-                        <strike class="price-cost">$269.00</strike>
-                    </div>  
-                    <div class="info">
-                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                    </div> 
-                </div>
-                <div class="product">
-                    <div class="product-tool">
-                        <div class="change-hover-hot" style="position: absolute;">
-                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                        </div>
-                        <img src="img/flycam.png" alt="Loading...">
-                    </div>
-                    <div class="price"> 
-                        <h3 class="price-sale">$169.95</h3>
-                        <strike class="price-cost">$269.00</strike>
-                    </div>  
-                    <div class="info">
-                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                    </div> 
-                </div>
-                <div class="product">
-                    <div class="product-tool">
-                        <div class="change-hover-hot" style="position: absolute;">
-                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                        </div>
-                        <img src="img/flycam.png" alt="Loading...">
-                    </div>
-                    <div class="price"> 
-                        <h3 class="price-sale">$169.95</h3>
-                        <strike class="price-cost">$269.00</strike>
-                    </div>  
-                    <div class="info">
-                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                    </div> 
-                </div>
-                <div class="product">
-                    <div class="product-tool">
-                        <div class="change-hover-hot" style="position: absolute;">
-                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                        </div>
-                        <img src="img/flycam.png" alt="Loading...">
-                    </div>
-                    <div class="price"> 
-                        <h3 class="price-sale">$169.95</h3>
-                        <strike class="price-cost">$269.00</strike>
-                    </div>  
-                    <div class="info">
-                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                    </div> 
-                </div>
-               
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide" style="display: flex;">
+                                <div class="product">
+                                    <div class="product-tool">
+                                        <div class="change-hover-hot" style="position: absolute;">
+                                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                                        </div>
+                                        <img src="img/flycam.png" alt="Loading..."> 
+                                    </div>
+                                    <div class="price"> 
+                                        <h3 class="price-sale">$169.95</h3>
+                                        <strike class="price-cost">$269.00</strike>
+                                    </div>  
+                                    <div class="info">
+                                        <p>Hover Camera Passport Personal Photogragrapher</p>
+                                    </div> 
+                                </div>
+                                <div class="product">
+                                    <div class="product-tool">
+                                        <div class="change-hover-hot" style="position: absolute;">
+                                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                                        </div>
+                                        <img src="img/flycam.png" alt="Loading..."> 
+                                    </div>
+                                    <div class="price"> 
+                                        <h3 class="price-sale">$169.95</h3>
+                                        <strike class="price-cost">$269.00</strike>
+                                    </div>  
+                                    <div class="info">
+                                        <p>Hover Camera Passport Personal Photogragrapher</p>
+                                    </div> 
+                                </div>
+                                <div class="product">
+                                    <div class="product-tool">
+                                        <div class="change-hover-hot" style="position: absolute;">
+                                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                                        </div>
+                                        <img src="img/flycam.png" alt="Loading..."> 
+                                    </div>
+                                    <div class="price"> 
+                                        <h3 class="price-sale">$169.95</h3>
+                                        <strike class="price-cost">$269.00</strike>
+                                    </div>  
+                                    <div class="info">
+                                        <p>Hover Camera Passport Personal Photogragrapher</p>
+                                    </div> 
+                                </div>
+                                <div class="product">
+                                    <div class="product-tool">
+                                        <div class="change-hover-hot" style="position: absolute;">
+                                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                                        </div>
+                                        <img src="img/flycam.png" alt="Loading..."> 
+                                    </div>
+                                    <div class="price"> 
+                                        <h3 class="price-sale">$169.95</h3>
+                                        <strike class="price-cost">$269.00</strike>
+                                    </div>  
+                                    <div class="info">
+                                        <p>Hover Camera Passport Personal Photogragrapher</p>
+                                    </div> 
+                                </div>
+                                <div class="product">
+                                    <div class="product-tool">
+                                        <div class="change-hover-hot" style="position: absolute;">
+                                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                                        </div>
+                                        <img src="img/flycam.png" alt="Loading..."> 
+                                    </div>
+                                    <div class="price"> 
+                                        <h3 class="price-sale">$169.95</h3>
+                                        <strike class="price-cost">$269.00</strike>
+                                    </div>  
+                                    <div class="info">
+                                        <p>Hover Camera Passport Personal Photogragrapher</p>
+                                    </div> 
+                                </div>
+                                <div class="product">
+                                    <div class="product-tool">
+                                        <div class="change-hover-hot" style="position: absolute;">
+                                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                                        </div>
+                                        <img src="img/flycam.png" alt="Loading..."> 
+                                    </div>
+                                    <div class="price"> 
+                                        <h3 class="price-sale">$169.95</h3>
+                                        <strike class="price-cost">$269.00</strike>
+                                    </div>  
+                                    <div class="info">
+                                        <p>Hover Camera Passport Personal Photogragrapher</p>
+                                    </div> 
+                                </div>
+                                
+                            </li>
+                        </ul>
+                      </div>
+                  </section>  
             </div>
         </div>
         <div id="today-detals">
@@ -619,7 +696,7 @@
                                     <div class="col-sm-3">
                                         <div class="row product-hori">
                                             <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
+                                               <img src="img/loabluetooth.png" alt="" width="100%">
                                             </div>
                                             <div class="col-sm-7 detail">
                                                 <p class="price">$3 299.99</p>
@@ -630,13 +707,13 @@
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>                           
-                                                    <p>(5)</p>
+                                                    <div><span>(5)</span></div>
                                                 </div>
                                             </div>
                                         </div>		
                                         <div class="row product-hori">
                                             <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
+                                               <img src="img/loabluetooth.png" alt="" width="100%">
                                             </div>
                                             <div class="col-sm-7 detail">
                                                 <p class="price">$3 299.99</p>
@@ -647,13 +724,13 @@
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>                            
-                                                    <p>(5)</p>
+                                                    <span>(5)</span>
                                                 </div>
-                                            </div>
+                                            </div> 
                                         </div>	
                                         <div class="row product-hori">
                                             <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
+                                               <img src="img/loabluetooth.png" alt="" width="100%">
                                             </div>
                                             <div class="col-sm-7 detail">
                                                 <p class="price">$3 299.99</p>
@@ -664,7 +741,7 @@
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>                            
-                                                    <p>(5)</p>
+                                                    <span>(5)</span>
                                                 </div>
                                             </div>
                                         </div>		
@@ -675,7 +752,7 @@
                                                 <a href=""><i class="fa-regular fa-heart"></i></a>
                                                 <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
                                             </div>
-                                            <img src="img/loabluetooth.png" alt="">
+                                           <img src="img/loabluetooth.png" alt="" width="100%">
                                         </div>
                                         <div class="col-sm-5 product-hori">                                
                                             <div class="detail">
@@ -687,20 +764,20 @@
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>                             
-                                                    <p>(5)</p>
+                                                    <span>(5)</span>
                                                 </div>
                                                 <ul class="outstanding">
                                                     <li>- Picture Quality Index: 1300 </li>
                                                     <li>- Technological PurColour</li>
-                                                    <li>- Android</li>
+                                                    <li>- Android TV</li>
                                                 </ul>
-                                            </div>
+                                                <button class="add-to-cart">Add to cart</button>                                            </div>
                                         </div>	
                                     </div>                          
                                     <div class="col-sm-3">
                                         <div class="row product-hori">
                                             <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
+                                               <img src="img/loabluetooth.png" alt="" width="100%">
                                             </div>
                                             <div class="col-sm-7 detail">
                                                 <p class="price">$3 299.99</p>
@@ -711,13 +788,13 @@
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>                              
-                                                    <p>(5)</p>
+                                                    <span>(5)</span>
                                                 </div>
                                             </div>
                                         </div>		
                                         <div class="row product-hori">
                                             <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
+                                               <img src="img/loabluetooth.png" alt="" width="100%">
                                             </div>
                                             <div class="col-sm-7 detail">
                                                 <p class="price">$3 299.99</p>
@@ -728,13 +805,13 @@
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>                              
-                                                    <p>(5)</p>
+                                                    <span>(5)</span>
                                                 </div>
                                             </div>
                                         </div>	
                                         <div class="row product-hori">
                                             <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
+                                               <img src="img/loabluetooth.png" alt="" width="100%">
                                             </div>
                                             <div class="col-sm-7 detail">
                                                 <p class="price">$3 299.99</p>
@@ -745,289 +822,14 @@
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>                              
-                                                    <p>(5)</p>
+                                                    <span>(5)</span>
                                                 </div>
                                             </div>
                                         </div>		
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="row today">
-                                    <div class="col-sm-3">
-                                        <div class="row product-hori">
-                                            <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
-                                            </div>
-                                            <div class="col-sm-7 detail">
-                                                <p class="price">$3 299.99</p>
-                                                <p class="description">65" Class Q8C Curved QLED 4K TV</p>
-                                                <div class="evaluate">	
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>                           
-                                                    <p>(5)</p>
-                                                </div>
-                                            </div>
-                                        </div>		
-                                        <div class="row product-hori">
-                                            <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
-                                            </div>
-                                            <div class="col-sm-7 detail">
-                                                <p class="price">$3 299.99</p>
-                                                <p class="description">65" Class Q8C Curved QLED 4K TV</p>
-                                                <div class="evaluate">	
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>                            
-                                                    <p>(5)</p>
-                                                </div>
-                                            </div>
-                                        </div>	
-                                        <div class="row product-hori">
-                                            <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
-                                            </div>
-                                            <div class="col-sm-7 detail">
-                                                <p class="price">$3 299.99</p>
-                                                <p class="description">65" Class Q8C Curved QLED 4K TV</p>
-                                                <div class="evaluate">	
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>                            
-                                                    <p>(5)</p>
-                                                </div>
-                                            </div>
-                                        </div>		
-                                    </div>
-                                    <div class="detail-slideshow row col-sm-6">
-                                        <div class="col-sm-7 card-image">
-                                            <div class="change-hover-hot" style="position: absolute;">
-                                                <a href=""><i class="fa-regular fa-heart"></i></a>
-                                                <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                                            </div>
-                                            <img src="img/loabluetooth.png" alt="">
-                                        </div>
-                                        <div class="col-sm-5 product-hori">                                
-                                            <div class="detail">
-                                                <p class="price">$1 199.99</p>
-                                                <p class="description">55" Class MU85000 Curved QLED 4K UHD TV</p>
-                                                <div class="evaluate">	
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>                             
-                                                    <p>(5)</p>
-                                                </div>
-                                                <ul class="outstanding">
-                                                    <li>- Picture Quality Index: 1300 </li>
-                                                    <li>- Technological PurColour</li>
-                                                    <li>- Android</li>
-                                                </ul>
-                                            </div>
-                                        </div>	
-                                    </div>                          
-                                    <div class="col-sm-3">
-                                        <div class="row product-hori">
-                                            <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
-                                            </div>
-                                            <div class="col-sm-7 detail">
-                                                <p class="price">$3 299.99</p>
-                                                <p class="description">65" Class Q8C Curved QLED 4K TV</p>
-                                                <div class="evaluate">	
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>                              
-                                                    <p>(5)</p>
-                                                </div>
-                                            </div>
-                                        </div>		
-                                        <div class="row product-hori">
-                                            <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
-                                            </div>
-                                            <div class="col-sm-7 detail">
-                                                <p class="price">$3 299.99</p>
-                                                <p class="description">65" Class Q8C Curved QLED 4K TV</p>
-                                                <div class="evaluate">	
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>                              
-                                                    <p>(5)</p>
-                                                </div>
-                                            </div>
-                                        </div>	
-                                        <div class="row product-hori">
-                                            <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
-                                            </div>
-                                            <div class="col-sm-7 detail">
-                                                <p class="price">$3 299.99</p>
-                                                <p class="description">65" Class Q8C Curved QLED 4K TV</p>
-                                                <div class="evaluate">	
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>                              
-                                                    <p>(5)</p>
-                                                </div>
-                                            </div>
-                                        </div>		
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row today">
-                                    <div class="col-sm-3">
-                                        <div class="row product-hori">
-                                            <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
-                                            </div>
-                                            <div class="col-sm-7 detail">
-                                                <p class="price">$3 299.99</p>
-                                                <p class="description">65" Class Q8C Curved QLED 4K TV</p>
-                                                <div class="evaluate">	
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>                           
-                                                    <p>(5)</p>
-                                                </div>
-                                            </div>
-                                        </div>		
-                                        <div class="row product-hori">
-                                            <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
-                                            </div>
-                                            <div class="col-sm-7 detail">
-                                                <p class="price">$3 299.99</p>
-                                                <p class="description">65" Class Q8C Curved QLED 4K TV</p>
-                                                <div class="evaluate">	
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>                            
-                                                    <p>(5)</p>
-                                                </div>
-                                            </div>
-                                        </div>	
-                                        <div class="row product-hori">
-                                            <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
-                                            </div>
-                                            <div class="col-sm-7 detail">
-                                                <p class="price">$3 299.99</p>
-                                                <p class="description">65" Class Q8C Curved QLED 4K TV</p>
-                                                <div class="evaluate">	
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>                            
-                                                    <p>(5)</p>
-                                                </div>
-                                            </div>
-                                        </div>		
-                                    </div>
-                                    <div class="detail-slideshow row col-sm-6">
-                                        <div class="col-sm-7 card-image">
-                                            <div class="change-hover-hot" style="position: absolute;">
-                                                <a href=""><i class="fa-regular fa-heart"></i></a>
-                                                <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                                            </div>
-                                            <img src="img/loabluetooth.png" alt="">
-                                        </div>
-                                        <div class="col-sm-5 product-hori">                                
-                                            <div class="detail">
-                                                <p class="price">$1 199.99</p>
-                                                <p class="description">55" Class MU85000 Curved QLED 4K UHD TV</p>
-                                                <div class="evaluate">	
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>                             
-                                                    <p>(5)</p>
-                                                </div>
-                                                <ul class="outstanding">
-                                                    <li>- Picture Quality Index: 1300 </li>
-                                                    <li>- Technological PurColour</li>
-                                                    <li>- Android</li>
-                                                </ul>
-                                            </div>
-                                        </div>	
-                                    </div>                          
-                                    <div class="col-sm-3">
-                                        <div class="row product-hori">
-                                            <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
-                                            </div>
-                                            <div class="col-sm-7 detail">
-                                                <p class="price">$3 299.99</p>
-                                                <p class="description">65" Class Q8C Curved QLED 4K TV</p>
-                                                <div class="evaluate">	
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>                              
-                                                    <p>(5)</p>
-                                                </div>
-                                            </div>
-                                        </div>		
-                                        <div class="row product-hori">
-                                            <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
-                                            </div>
-                                            <div class="col-sm-7 detail">
-                                                <p class="price">$3 299.99</p>
-                                                <p class="description">65" Class Q8C Curved QLED 4K TV</p>
-                                                <div class="evaluate">	
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>                              
-                                                    <p>(5)</p>
-                                                </div>
-                                            </div>
-                                        </div>	
-                                        <div class="row product-hori">
-                                            <div class="col-sm-5 thumbnail">
-                                                <img src="img/loabluetooth.png" alt="">
-                                            </div>
-                                            <div class="col-sm-7 detail">
-                                                <p class="price">$3 299.99</p>
-                                                <p class="description">65" Class Q8C Curved QLED 4K TV</p>
-                                                <div class="evaluate">	
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>                              
-                                                    <p>(5)</p>
-                                                </div>
-                                            </div>
-                                        </div>		
-                                    </div>
-                                </div>
-                            </div>
+                           
                            
                         </div>
                     <!-- Left and right controls -->
@@ -1039,8 +841,8 @@
                     </a> -->
                     </div>
                 </section>
-            </div>   
-        </div>
+            </div>  
+        </div>   
         <div id="hot-new-arrivals">
             <div class="row hot-new">
                 <div class="col-md-6 title-header">
@@ -1067,8 +869,8 @@
                     <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="rơw product-list-hot">
-                                    <div class="col-sm-3">
-                                        <div class="product">
+                                    <div class="" style="width: 20%; height: 80%;">
+                                        <div class="product" style="height: 40%;">
                                             <div class="change-hover-hot" style="position: absolute;">
                                                 <a href=""><i class="fa-regular fa-heart"></i></a>
                                                 <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
@@ -1079,7 +881,7 @@
                                                 <p>Nest Learning thermostat 3rd generation</p>
                                             </div> 
                                         </div>  
-                                        <div class="product">
+                                        <div class="product" style="height: 40%;">
                                             <div class="change-hover-hot" style="position: absolute;">
                                                 <a href=""><i class="fa-regular fa-heart"></i></a>
                                                 <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
@@ -1091,8 +893,8 @@
                                             </div> 
                                         </div>                                       
                                     </div>
-                                    <div class="col-sm-3">
-                                        <div class="product">
+                                    <div class="" style="width: 20%; height: 80%;">
+                                        <div class="product" style="height: 40%;">
                                             <div class="change-hover-hot" style="position: absolute;">
                                                 <a href=""><i class="fa-regular fa-heart"></i></a>
                                                 <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
@@ -1103,7 +905,7 @@
                                                 <p>Nest Learning thermostat 3rd generation</p>
                                             </div> 
                                         </div>  
-                                        <div class="product">
+                                        <div class="product" style="height: 40%;">
                                             <div class="change-hover-hot" style="position: absolute;">
                                                 <a href=""><i class="fa-regular fa-heart"></i></a>
                                                 <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
@@ -1115,7 +917,7 @@
                                             </div> 
                                         </div>  
                                     </div> 
-                                    <div class="col-sm-3 product-hot">
+                                    <div class="product-hot" style="width: 30%; height: 80%;">
                                         <div class="change-hover-hot" style="position: absolute;">
                                             <a href=""><i class="fa-regular fa-heart"></i></a>
                                             <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
@@ -1129,8 +931,8 @@
                                             <p>ecobee3 lite Smart Thermostar</p>
                                         </div> 
                                     </div>
-                                    <div class="col-sm-3">
-                                        <div class="product">
+                                    <div class="" style="width: 20%; height: 80%;">
+                                        <div class="product" style="height: 40%;">
                                             <div class="change-hover-hot" style="position: absolute;">
                                                 <a href=""><i class="fa-regular fa-heart"></i></a>
                                                 <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
@@ -1141,7 +943,7 @@
                                                 <p>Nest Learning thermostat 3rd generation</p>
                                             </div> 
                                         </div>  
-                                        <div class="product">
+                                        <div class="product" style="height: 40%;">
                                             <div class="change-hover-hot" style="position: absolute;">
                                                 <a href=""><i class="fa-regular fa-heart"></i></a>
                                                 <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
@@ -1182,11 +984,11 @@
                     <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row recommended-list">
-                                    <div class="col-md-2 title">
+                                    <div class="col-md-3 title">
                                         <h1><b>Recommended based </b>on recent browsing</h1> 
                                         <img src="img/flycam2.png" alt="Loading...">
                                     </div>
-                                    <div class="col-md-10 list-product">
+                                    <div class="col-md-9 list-product">
                                         <div class="product">
                                             <div class="product-tool">
                                                 <img src="img/flycam.png" alt="Loading...">
@@ -1251,148 +1053,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="row recommended-list">
-                                    <div class="col-md-2 title">
-                                        <h1><b>Recommended based </b>on recent browsing</h1> 
-                                        <img src="img/flycam2.png" alt="Loading...">
-                                    </div>
-                                    <div class="col-md-10 list-product">
-                                        <div class="product">
-                                            <div class="product-tool">
-                                                <img src="img/flycam.png" alt="Loading...">
-                                                <!-- <i class="fa-regular fa-heart"></i> -->
-                                            </div>
-                                            <div class="price"> 
-                                                <h4 class="price-sale">$499.95</h4>
-                                            </div>  
-                                            <div class="info">
-                                                <p>DJI Goggles Immersive FPT</p>
-                                            </div> 
-                                        </div>
-                                        <div class="product">
-                                            <div class="product-tool">
-                                                <img src="img/flycam.png" alt="Loading...">
-                                                <!-- <i class="fa-regular fa-heart"></i> -->
-                                            </div>
-                                            <div class="price"> 
-                                                <h4 class="price-sale">$499.95</h4>
-                                            </div>  
-                                            <div class="info">
-                                                <p>Hover Camera Passport Personal Photogragrapher</p>
-                                            </div> 
-                                        </div>
-                                        <div class="product">
-                                            <div class="product-tool">
-                                                <img src="img/flycam.png" alt="Loading...">
-                                                <!-- <i class="fa-regular fa-heart"></i> -->
-                                            </div>
-                                            <div class="price"> 
-                                                <h4 class="price-sale">$499.95</h4>
-                                            </div>  
-                                            <div class="info">
-                                                <p>Hover Camera Passport Personal Photogragrapher</p>
-                                            </div> 
-                                        </div>
-                                        <div class="product">
-                                            <div class="product-tool">
-                                                <img src="img/flycam.png" alt="Loading...">
-                                                <!-- <i class="fa-regular fa-heart"></i> -->
-                                            </div>
-                                            <div class="price"> 
-                                                <h4 class="price-sale">$499.95</h4>
-                                            </div>  
-                                            <div class="info">
-                                                <p>Hover Camera Passport Personal Photogragrapher</p>
-                                            </div> 
-                                        </div>
-                                        <div class="product">
-                                            <div class="product-tool">
-                                                <img src="img/flycam.png" alt="Loading...">
-                                                <!-- <i class="fa-regular fa-heart"></i> -->
-                                            </div>
-                                            <div class="price"> 
-                                                <h4 class="price-sale">$499.95</h4>
-                                            </div>  
-                                            <div class="info">
-                                                <p>Hover Camera Passport Personal Photogragrapher</p>
-                                            </div> 
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row recommended-list">
-                                    <div class="col-md-2 title">
-                                        <h1><b>Recommended based </b>on recent browsing</h1> 
-                                        <img src="img/flycam2.png" alt="Loading...">
-                                    </div>
-                                    <div class="col-md-10 list-product">
-                                        <div class="product">
-                                            <div class="product-tool">
-                                                <img src="img/flycam.png" alt="Loading...">
-                                                <!-- <i class="fa-regular fa-heart"></i> -->
-                                            </div>
-                                            <div class="price"> 
-                                                <h4 class="price-sale">$499.95</h4>
-                                            </div>  
-                                            <div class="info">
-                                                <p>DJI Goggles Immersive FPT</p>
-                                            </div> 
-                                        </div>
-                                        <div class="product">
-                                            <div class="product-tool">
-                                                <img src="img/flycam.png" alt="Loading...">
-                                                <!-- <i class="fa-regular fa-heart"></i> -->
-                                            </div>
-                                            <div class="price"> 
-                                                <h4 class="price-sale">$499.95</h4>
-                                            </div>  
-                                            <div class="info">
-                                                <p>Hover Camera Passport Personal Photogragrapher</p>
-                                            </div> 
-                                        </div>
-                                        <div class="product">
-                                            <div class="product-tool">
-                                                <img src="img/flycam.png" alt="Loading...">
-                                                <!-- <i class="fa-regular fa-heart"></i> -->
-                                            </div>
-                                            <div class="price"> 
-                                                <h4 class="price-sale">$499.95</h4>
-                                            </div>  
-                                            <div class="info">
-                                                <p>Hover Camera Passport Personal Photogragrapher</p>
-                                            </div> 
-                                        </div>
-                                        <div class="product">
-                                            <div class="product-tool">
-                                                <img src="img/flycam.png" alt="Loading...">
-                                                <!-- <i class="fa-regular fa-heart"></i> -->
-                                            </div>
-                                            <div class="price"> 
-                                                <h4 class="price-sale">$499.95</h4>
-                                            </div>  
-                                            <div class="info">
-                                                <p>Hover Camera Passport Personal Photogragrapher</p>
-                                            </div> 
-                                        </div>
-                                        <div class="product">
-                                            <div class="product-tool">
-                                                <img src="img/flycam.png" alt="Loading...">
-                                                <!-- <i class="fa-regular fa-heart"></i> -->
-                                            </div>
-                                            <div class="price"> 
-                                                <h4 class="price-sale">$499.95</h4>
-                                            </div>  
-                                            <div class="info">
-                                                <p>Hover Camera Passport Personal Photogragrapher</p>
-                                            </div> 
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
+                          
                         </div>
                     <!-- Left and right controls -->
                     <!-- <a class="carousel-control-prev" href="#pic" data-slide="prev">
@@ -1510,7 +1171,7 @@
             <div class="row list-product-hori">
                 <div class="row col-sm-4 product-hori">
                     <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
                     </div>
                     <div class="col-sm-7 detail">
                         <p class="price">$599.95</p>
@@ -1521,13 +1182,13 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>           
-                            <p>(Based on 5 reviews)</p>
+                            <span>(Based on 5 reviews)</span>
                         </div>
                     </div>
                 </div>	
                 <div class="row col-sm-4 product-hori">
                     <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
                     </div>
                     <div class="col-sm-7 detail">
                         <p class="price">$3 299.99</p>
@@ -1538,13 +1199,13 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>                              
-                            <p>(5)</p>
+                            <span>(Based on 5 reviews)</span>
                         </div>
                     </div>
                 </div>	
                 <div class="row col-sm-4 product-hori">
                     <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
                     </div>
                     <div class="col-sm-7 detail">
                         <p class="price">$3 299.99</p>
@@ -1555,7 +1216,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>                            
-                            <p>(5)</p>
+                            <span>(Based on 5 reviews)</span>
                         </div>
                     </div>
                 </div>               
@@ -1572,14 +1233,14 @@
         <div class="row on-sale-producs">
             <dic class="col-sm-2">
                 <div class="title-header">
-                    <h3><b>On Sale </b>Products</h3> 
+                    <h4><b>On Sale </b>Products</h4> 
                 </div>
                 <div class="row product-hori">
                     <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
                     </div>
                     <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
+                        <h5 class="description">Beats solo wireless</h5> 
                         <div class="evaluate">	
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -1592,10 +1253,10 @@
                 </div>
                 <div class="row product-hori">
                     <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
                     </div>
                     <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
+                         <h5 class="description">Beats solo wireless</h5> 
                         <div class="evaluate">	
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -1608,63 +1269,10 @@
                 </div>
                 <div class="row product-hori">
                     <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
                     </div>
                     <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
-                        <div class="evaluate">	
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>                             
-                        </div> 
-                        <p class="price">$299.95</p>
-                    </div> 
-                </div>
-            </dic>
-            <dic class="col-sm-2">
-                <div class="title-header">
-                    <h3><b>On Sale </b>Products</h3> 
-                </div>
-                <div class="row product-hori">
-                    <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
-                    </div>
-                    <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
-                        <div class="evaluate">	
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>                             
-                        </div> 
-                        <p class="price">$299.95</p>
-                    </div> 
-                </div>
-                <div class="row product-hori">
-                    <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
-                    </div>
-                    <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
-                        <div class="evaluate">	
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>                             
-                        </div> 
-                        <p class="price">$299.95</p>
-                    </div> 
-                </div>
-                <div class="row product-hori">
-                    <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
-                    </div>
-                    <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
+                         <h5 class="description">Beats solo wireless</h5> 
                         <div class="evaluate">	
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -1678,14 +1286,14 @@
             </dic>
             <dic class="col-sm-2">
                 <div class="title-header">
-                    <h3><b>On Sale </b>Products</h3> 
+                    <h4><b>On Sale </b>Products</h4> 
                 </div>
                 <div class="row product-hori">
                     <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
                     </div>
                     <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
+                         <h5 class="description">Beats solo wireless</h5> 
                         <div class="evaluate">	
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -1698,10 +1306,10 @@
                 </div>
                 <div class="row product-hori">
                     <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
                     </div>
                     <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
+                         <h5 class="description">Beats solo wireless</h5> 
                         <div class="evaluate">	
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -1714,63 +1322,10 @@
                 </div>
                 <div class="row product-hori">
                     <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
                     </div>
                     <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
-                        <div class="evaluate">	
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>                             
-                        </div> 
-                        <p class="price">$299.95</p>
-                    </div> 
-                </div>
-            </dic>
-            <dic class="col-sm-2">
-                <div class="title-header">
-                    <h3><b>On Sale </b>Products</h3> 
-                </div>
-                <div class="row product-hori">
-                    <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
-                    </div>
-                    <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
-                        <div class="evaluate">	
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>                             
-                        </div> 
-                        <p class="price">$299.95</p>
-                    </div> 
-                </div>
-                <div class="row product-hori">
-                    <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
-                    </div>
-                    <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
-                        <div class="evaluate">	
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>                             
-                        </div> 
-                        <p class="price">$299.95</p>
-                    </div> 
-                </div>
-                <div class="row product-hori">
-                    <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
-                    </div>
-                    <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
+                         <h5 class="description">Beats solo wireless</h5> 
                         <div class="evaluate">	
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -1784,14 +1339,14 @@
             </dic>
             <dic class="col-sm-2">
                 <div class="title-header">
-                    <h3><b>On Sale </b>Products</h3> 
+                    <h4><b>On Sale </b>Products</h4> 
                 </div>
                 <div class="row product-hori">
                     <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
                     </div>
                     <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
+                         <h5 class="description">Beats solo wireless</h5> 
                         <div class="evaluate">	
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -1804,10 +1359,10 @@
                 </div>
                 <div class="row product-hori">
                     <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
                     </div>
                     <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
+                         <h5 class="description">Beats solo wireless</h5> 
                         <div class="evaluate">	
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -1820,10 +1375,10 @@
                 </div>
                 <div class="row product-hori">
                     <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
                     </div>
                     <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
+                         <h5 class="description">Beats solo wireless</h5> 
                         <div class="evaluate">	
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -1837,14 +1392,14 @@
             </dic>
             <dic class="col-sm-2">
                 <div class="title-header">
-                    <h3><b>On Sale </b>Products</h3> 
+                    <h4><b>On Sale </b>Products</h4> 
                 </div>
                 <div class="row product-hori">
                     <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
                     </div>
                     <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
+                         <h5 class="description">Beats solo wireless</h5> 
                         <div class="evaluate">	
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -1857,10 +1412,10 @@
                 </div>
                 <div class="row product-hori">
                     <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
                     </div>
                     <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
+                         <h5 class="description">Beats solo wireless</h5> 
                         <div class="evaluate">	
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -1873,10 +1428,116 @@
                 </div>
                 <div class="row product-hori">
                     <div class="col-sm-5 thumbnail">
-                        <img src="img/loabluetooth.png" alt="">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
                     </div>
                     <div class="col-sm-7 detail">
-                        <p class="description">Beats solo wireless</p> 
+                         <h5 class="description">Beats solo wireless</h5> 
+                        <div class="evaluate">	
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>                             
+                        </div> 
+                        <p class="price">$299.95</p>
+                    </div> 
+                </div>
+            </dic>
+            <dic class="col-sm-2">
+                <div class="title-header">
+                    <h4><b>On Sale </b>Products</h4> 
+                </div>
+                <div class="row product-hori">
+                    <div class="col-sm-5 thumbnail">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
+                    </div>
+                    <div class="col-sm-7 detail">
+                         <h5 class="description">Beats solo wireless</h5> 
+                        <div class="evaluate">	
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>                             
+                        </div> 
+                        <p class="price">$299.95</p>
+                    </div> 
+                </div>
+                <div class="row product-hori">
+                    <div class="col-sm-5 thumbnail">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
+                    </div>
+                    <div class="col-sm-7 detail">
+                         <h5 class="description">Beats solo wireless</h5> 
+                        <div class="evaluate">	
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>                             
+                        </div> 
+                        <p class="price">$299.95</p>
+                    </div> 
+                </div>
+                <div class="row product-hori">
+                    <div class="col-sm-5 thumbnail">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
+                    </div>
+                    <div class="col-sm-7 detail">
+                         <h5 class="description">Beats solo wireless</h5> 
+                        <div class="evaluate">	
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>                             
+                        </div> 
+                        <p class="price">$299.95</p>
+                    </div> 
+                </div>
+            </dic>
+            <dic class="col-sm-2">
+                <div class="title-header">
+                    <h4><b>On Sale </b>Products</h4> 
+                </div>
+                <div class="row product-hori">
+                    <div class="col-sm-5 thumbnail">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
+                    </div>
+                    <div class="col-sm-7 detail">
+                         <h5 class="description">Beats solo wireless</h5> 
+                        <div class="evaluate">	
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>                             
+                        </div> 
+                        <p class="price">$299.95</p>
+                    </div> 
+                </div>
+                <div class="row product-hori">
+                    <div class="col-sm-5 thumbnail">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
+                    </div>
+                    <div class="col-sm-7 detail">
+                         <h5 class="description">Beats solo wireless</h5> 
+                        <div class="evaluate">	
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>                             
+                        </div> 
+                        <p class="price">$299.95</p>
+                    </div> 
+                </div>
+                <div class="row product-hori">
+                    <div class="col-sm-5 thumbnail">
+                       <img src="img/loabluetooth.png" alt="" width="100%">
+                    </div>
+                    <div class="col-sm-7 detail">
+                         <h5 class="description">Beats solo wireless</h5> 
                         <div class="evaluate">	
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -1898,8 +1559,44 @@
                     <img src="img/giaohang.png" alt="">
                 </div>
                 <div class="col-sm-7 features-description">
-                    <b>Free Delivery</b>
-                    <p>From <sup>$</sup>50 and up</p>
+                    <h4>Free Delivery</h4>
+                    <span>From <sup>$</sup>50 and up</span>
+                </div>
+            </div>
+            <div class="row col-sm-2">
+                <div class="col-sm-5 thumbnail">
+                    <img src="img/giaohang.png" alt="">
+                </div>
+                <div class="col-sm-7 features-description">
+                    <h4>Free Delivery</h4>
+                    <span>From <sup>$</sup>50 and up</span>
+                </div>
+            </div>
+            <div class="row col-sm-2">
+                <div class="col-sm-5 thumbnail">
+                    <img src="img/giaohang.png" alt="">
+                </div>
+                <div class="col-sm-7 features-description">
+                    <h4>Free Delivery</h4>
+                    <span>From <sup>$</sup>50 and up</span>
+                </div>
+            </div>
+            <div class="row col-sm-2">
+                <div class="col-sm-5 thumbnail">
+                    <img src="img/giaohang.png" alt="">
+                </div>
+                <div class="col-sm-7 features-description">
+                    <h4>Free Delivery</h4>
+                    <span>From <sup>$</sup>50 and up</span>
+                </div>
+            </div>
+            <div class="row col-sm-2">
+                <div class="col-sm-5 thumbnail">
+                    <img src="img/giaohang.png" alt="">
+                </div>
+                <div class="col-sm-7 features-description">
+                    <h4>Free Delivery</h4>
+                    <span>From <sup>$</sup>50 and up</span>
                 </div>
             </div>
             <div class="row col-sm-2">
@@ -1908,43 +1605,7 @@
                 </div>
                 <div class="col-sm-7 features-description">
                     <b>Free Delivery</b>
-                    <p>From <sup>$</sup>50 and up</p>
-                </div>
-            </div>
-            <div class="row col-sm-2">
-                <div class="col-sm-5 thumbnail">
-                    <img src="img/giaohang.png" alt="">
-                </div>
-                <div class="col-sm-7 features-description">
-                    <b>Free Delivery</b>
-                    <p>From <sup>$</sup>50 and up</p>
-                </div>
-            </div>
-            <div class="row col-sm-2">
-                <div class="col-sm-5 thumbnail">
-                    <img src="img/giaohang.png" alt="">
-                </div>
-                <div class="col-sm-7 features-description">
-                    <b>Free Delivery</b>
-                    <p>From <sup>$</sup>50 and up</p>
-                </div>
-            </div>
-            <div class="row col-sm-2">
-                <div class="col-sm-5 thumbnail">
-                    <img src="img/giaohang.png" alt="">
-                </div>
-                <div class="col-sm-7 features-description">
-                    <b>Free Delivery</b>
-                    <p>From <sup>$</sup>50 and up</p>
-                </div>
-            </div>
-            <div class="row col-sm-2">
-                <div class="col-sm-5 thumbnail">
-                    <img src="img/giaohang.png" alt="">
-                </div>
-                <div class="col-sm-7 features-description">
-                    <b>Free Delivery</b>
-                    <p>From <sup>$</sup>50 and up</p>
+                    <span>From <sup>$</sup>50 and up</span>
                 </div>
             </div>
         </div>
@@ -1963,7 +1624,7 @@
 				</p>
         	</div>
         	<div class="col-sm-2 inner " >
-				<a href=""><h3>About Us</h3></a>
+				<a href=""><h4>About Us</h4></a>
 				<a href="">Company info</a>
                 <a href="">News</a>
                 <a href="">Investors</a>
@@ -1971,7 +1632,7 @@
                 <a href="">Goverment relations</a>
 			</div>
             <div class="col-sm-2 inner " >
-				<a href=""><h3>Shop by Category</h3></a>
+				<a href=""><h4>Shop by Category</h4></a>
 				<a href="">Today's Deals</a>
                 <a href="">Best Sellers</a>
                 <a href="">New Arrivals</a>
@@ -1980,7 +1641,7 @@
                 <a href="">Featured</a>
 			</div>
             <div class="col-sm-2 inner " >
-				<a href=""><h3>Support and Service</h3></a>
+				<a href=""><h4>Support and Service</h4></a>
 				<a href="">Customer Service</a>
                 <a href="">Protections Plans</a>
                 <a href="">Schedule a Service</a>
@@ -1989,7 +1650,7 @@
                 <a href="">FAQ</a>
 			</div>
             <div class="col-sm-2 inner " >
-				<a href=""><h3>Partnerships</h3></a>
+				<a href=""><h4>Partnerships</h4></a>
 				<a href="">Affiliate Program</a>
                 <a href="">Developers</a>
                 <a href="">Mediamarket Ignite </a>
@@ -1998,7 +1659,7 @@
                 <a href="">Advertise with Us</a>
 			</div>
             <div class="col-sm-2 inner " >
-				<a href=""><h3>Customer Care</h3></a>
+				<a href=""><h4>Customer Care</h4></a>
 				<a href="">My Account</a>
                 <a href="">Track Order</a>
                 <a href="">Shop</a>
@@ -2042,14 +1703,20 @@
                 </div>
 			</div>
 		</section>
-	</footer>
-
-
-
-
-   
+	</footer> 
   
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/slider/js/splide.min.js"></script>
+    <script type="text/javascript" src="./js/time.js"></script>
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            perPage: 1,
+            focus: 0,
+        });
+
+        splide.mount();
     </script>
     <script>
           $(document).ready(function(){
