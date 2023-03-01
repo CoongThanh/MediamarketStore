@@ -1,18 +1,51 @@
-
 new Splide( '.splide', {
     classes: {
-        arrows: 'splide__arrows your-class-arrows',
-        arrow : 'splide__arrow your-class-arrow',
+        arrows: "control-arrows",
+        arrow: "splide__arrow control-arrow",
         prev  : 'splide__arrow--prev your-class-prev',
         next  : 'splide__arrow--next your-class-next',
     },
 } );
 
-new Splide( '.splide-best-seller', {
+new Splide('#splide-best-selling', {
+  arrows: boolean = true,
     classes: {
-        arrows: 'splide__arrows your-class-arrows',
-        arrow : 'splide__arrow your-class-arrow',
-        prev  : 'splide__arrow--prev your-class-prev',
-        next  : 'splide__arrow--next your-class-next',
+      arrows: "control-arrows",
+      arrow: "splide__arrow control-arrow",
+      prev: "splide__arrow--prev control-arrow--prev",
+      next: "splide__arrow--next control-arrow--next",
     },
+  }).mount();
+  
+new Splide('#splide-deal-month', {
+  pagination: false,
+  lazyLoad: true,
+  type: "loop",
+  classes: {
+    arrows: "control-arrows",
+    arrow: "splide__arrow control-arrow",
+    prev: "splide__arrow--prev control-arrow--prev",
+    next: "splide__arrow--next control-arrow--next",
+  },
+}).mount();
+
+new Splide('#splide-best-seller', {
+  pagination: false,
+  lazyLoad: true,
+  type: "loop",
+  classes: {
+    arrows: "control-arrows",
+    arrow: "splide__arrow control-arrow",
+    prev: "splide__arrow--prev control-arrow--prev",
+    next: "splide__arrow--next control-arrow--next",
+  },
+}).mount();
+
+new Splide( '.splidea', {
+  classes: {
+      arrows: "control-arrows",
+      arrow: "splide__arrow control-arrow",
+      prev  : 'splide__arrow--prev your-class-prev',
+      next  : 'splide__arrow--next your-class-next',
+  },
 } );

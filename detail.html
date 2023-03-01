@@ -38,7 +38,7 @@
 
             <div class="menu-main row">
                 <div class="col-sm-3">
-                    <h4><b>Media</b>market</h4>  
+                    <h1 style="font-size: 25px;"><b>Media</b>market</h1>  
                 </div>
                 <div class="col-sm-6">
                     <div class="seach">
@@ -113,16 +113,20 @@
         <div class="rew">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="Index.html" style="color: #797979">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a href="Index.html" style="color: #797979">Home</a></li>
                 <li class="breadcrumb-item"><a href="">Shop Detail Product Large</a></li>
               </ol>
             </nav>
         </div>
         <div class="row productbox">
-            <div class="col-sm-7">
-               <img src="img/loabluetooth.png" alt="" width="100%">
+            <div class="col-sm-6">
+                <div class="image-container" id="image-container">
+                    <img src="img/shoe-img.jpg" id="product-image" alt="shoe" style="width: 100%;" />
+                </div>
+                <div id="mouse-overlay" style="background-image: url('img/shoe-img.jpg');"></div>
+                <div id="overlay"></div>
             </div>
-            <div class="col-sm-5 product-hori">                                
+            <div class="col-sm-6 product-hori">                                
                 <div class="categories">
                     <div class="categories-top">
                         <div class="categories-top--left">
@@ -151,12 +155,10 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>                             
                         <p>(Based on 5 review)</p>
-                    </div>
-                    <div class="description">
+                    </div>                  
                     <p>Meet SoundLink Revolve+, the best-performing portable Bluetooth speaker from Bose. 
                     It's engineered to spread deeep, jaw-dropping sound int every direction-so you get 
-                    more sound all around. Turn it on and get immersed in the song.</p>
-                    </div>
+                    more sound all around. Turn it on and get immersed in the song.</p>                 
                     <ul class="outstanding">
                         <li>- The best-performing portable speadker from Bose </li>
                         <li>- Flexible fabric handle makes it easy to grab and go</li>
@@ -166,15 +168,15 @@
                     <div class="quantity">
                         <span>QTY</span>         
                         <form action="" >
-                            <input type="number" id="quantity" name="quantity" min="1" max="100" style="width: 100px; height: 33px; text-align: center; font-size: 15px; border:1px solid #eeeeee; ">
+                            <input type="number" id="quantity" name="quantity" min="1" max="100" style="width: 130px; height: 33px; text-align: center; font-size: 15px; border:1px solid #eeeeee; ">
                         </form>
-                        <select name="color" id="color" style="width: 150px; border:1px solid #eeeeee; ">
+                        <select name="color" id="color" style="width: 180px; border:1px solid #eeeeee; ">
                             <option value="red">Select color</option>
                             <option value="yellow">Yellow</option>
                             <option value="pink">Pink</option>
                             <option value="blue">Blue</option>
                         </select>  
-                        <select name="style" id="style" style="width: 150px; border:1px solid #eeeeee; ">
+                        <select name="style" id="style" style="width: 180px; border:1px solid #eeeeee; ">
                             <option value="red">Select style</option>
                             <option value="yellow">Yellow</option>
                             <option value="pink">Pink</option>
@@ -184,10 +186,10 @@
                     <div class="categories-end">
                         <button class="add-to-cart">Add to cart</button>                                    
                         <div class="btn">
-                            <a href=""><i class="fa-regular fa-heart"></i>Add to wishlist</a> 
+                            <a href=""><i class="fa-regular fa-heart"></i><span>Add to wishlist</span></a> 
                         </div> 
                         <div class="btn">
-                            <a href=""><i class="fa-regular fa-heart"></i>Add to compare</a> 
+                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i><span>Add to compare</span></a> 
                         </div>                         
                     </div>
                 </div>
@@ -195,17 +197,127 @@
         </div>
         <div class="buy-this-bundle">
             <div class="title">
-                <h4><b>Buy this bundle </b>and get of to 25%</h4> 
+                <h1><b>Buy this bundle </b>and get of to 25%</h1> 
             </div>
+            <div class="row buy-this-bundle-header">
+                <div class="col-sm-7 list-product" style="justify-content: start;">
+                    <div style="width: 20%;">
+                        <div class="product" >
+                            <div class="product-tool">
+                                <img src="img/flycam.png" alt="Loading..." style="width: 80%;" >
+                                <!-- <i class="fa-regular fa-heart"></i> -->
+                            </div>
+                            <div class="price"> 
+                                <h4 class="price-sale">$499.95</h4>
+                            </div>  
+                            <div class="info">
+                                <p>DJI Goggles Immersive FPT</p>
+                            </div> 
+                        </div>
+                        <div style="text-align: center;">
+                           <input type="checkbox" id="product" name="check" value="449.99">
+                           <p style="font-weight: 500; font-size: 12px; color: #7f7f7f;">Selected</p>
+                        </div>
+                    </div>
+                    <div style="width: 20%;">
+                        <div class="product" >
+                            <div class="product-tool">
+                                <img src="img/flycam.png" alt="Loading..." style="width: 80%;" >
+                                <!-- <i class="fa-regular fa-heart"></i> -->
+                            </div>
+                            <div class="price"> 
+                                <h4 class="price-sale">$499.95</h4>
+                            </div>  
+                            <div class="info">
+                                <p>DJI Goggles Immersive FPT</p>
+                            </div> 
+                        </div>
+                        <div style="text-align: center;">
+                           <input type="checkbox" id="product" name="check" value="449.99">
+                           <p style="font-weight: 500; font-size: 12px; color: #7f7f7f;">Selected</p>
+                        </div>
+                    </div>
+                    <div style="width: 20%;">
+                        <div class="product" >
+                            <div class="product-tool">
+                                <img src="img/flycam.png" alt="Loading..." style="width: 80%;" >
+                                <!-- <i class="fa-regular fa-heart"></i> -->
+                            </div>
+                            <div class="price"> 
+                                <h4 class="price-sale">$499.95</h4>
+                            </div>  
+                            <div class="info">
+                                <p>DJI Goggles Immersive FPT</p>
+                            </div> 
+                        </div>
+                        <div style="text-align: center;">
+                           <input type="checkbox" id="product" name="check" value="449.99">
+                           <p style="font-weight: 500; font-size: 12px; color: #7f7f7f;">Selected</p>
+                        </div>
+                    </div>
+                    <div style="width: 20%;">
+                        <div class="product" >
+                            <div class="product-tool">
+                                <img src="img/flycam.png" alt="Loading..." style="width: 80%;" >
+                                <!-- <i class="fa-regular fa-heart"></i> -->
+                            </div>
+                            <div class="price"> 
+                                <h4 class="price-sale">$499.95</h4>
+                            </div>  
+                            <div class="info">
+                                <p>DJI Goggles Immersive FPT</p>
+                            </div> 
+                        </div>
+                        <div style="text-align: center;">
+                           <input type="checkbox" id="product" name="check" value="449.99">
+                           <p style="font-weight: 500; font-size: 12px; color: #7f7f7f;">Selected</p>
+                        </div>
+                    </div>
+                    <div style="width: 20%;">
+                        <div class="product" >
+                            <div class="product-tool">
+                                <img src="img/flycam.png" alt="Loading..." style="width: 80%;" >
+                                <!-- <i class="fa-regular fa-heart"></i> -->
+                            </div>
+                            <div class="price"> 
+                                <h4 class="price-sale">$499.95</h4>
+                            </div>  
+                            <div class="info">
+                                <p>DJI Goggles Immersive FPT</p>
+                            </div> 
+                        </div>
+                        <div style="text-align: center;">
+                           <input type="checkbox" id="product" name="check" value="449.99">
+                           <p style="font-weight: 500; font-size: 12px; color: #7f7f7f;">Selected</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-sm-5 buy-this-bundle" style="padding: 0; display: flex; padding-left: 2%;">
+                    <div class="buy-this-bundle-center" style="width: 50%;">
+                        <div style="display: flex; font-size: 21px; font-weight: 600; height: 32px;">
+                            <span >Total Price:</span>
+                            <p class="price">$1,999.999</p>
+                        </div>   
+                        <span style="font-size: 16px; color: #7f7f7f; font-weight: 500;">Bundle Price for Selected items</span>  
+                    </div> 
+                    <div class="btn-buy-this-bundle" style="width: 50%; padding-left: 3%;">
+                        <button class="add-to-cart" style="width: 100%;">Add Bundle to Cart</button>  
+                    </div> 
+                </div>
+            </div>
+          
+          
+            
         </div>
         <div class="description">
             <div class="row tabs">
                 <div class="col-md-6 title-header">
-                    <h4><b>Description </b>Product</h4> 
+                    <h1><b>Description </b>Product</h1> 
                 </div>
                 <div class="col-md-6 menu-product">
                     <div class="menu-change-cate">          
-                            <li><a href="">Description</a></li>
+                            <li><a href="" style="color: red;">Description</a></li>
                             <li><a href="">specification</a></li>
                             <li><a href="">Shipping</a></li>
                             <li><a href="">Reviews (3)</a></li>
@@ -235,15 +347,15 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                   <img src="img/loabluetooth.png" alt="" width="100%">
+                   <img src="img/loa-bose-soundlink.png" alt="" width="100%">
                 </div>
                 
             </div>
             <div class="row black-block">
-                <div class="col-md-6">
-                    <img src="img/loabluetooth.png" alt="" width="100%">
+                <div class="col-md-5" style="position: absolute; margin-top: -8%; margin-left: -12%;" >
+                    <img src="img/soundlink.png" alt="" width="550px">
                 </div>
-                <div class="col-md-6 raiting">
+                <div class="col-md-7 raiting">
                     <div class="evaluate">	
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -279,121 +391,120 @@
                     </div>
                 </div>
             </div>
-            <div id="best-seller-product">
-                <div class="row best-seller">
-                    <div class="col-md-6 title-header">
-                            <h1><b>Best Sellers </b>Products</h1> 
-                    </div>
-                    <div class="col-md-6 change">
-                        <a href=""><i class="fa-solid fa-angle-left"></i></a>
-                        <a href=""><i class="fa-solid fa-angle-right"></i></a>
-                    </div>
+        </div>
+        <!-- <div class="best-seller-product">
+            <div class="row related">
+                <div class="col-md-6 title-header">
+                        <h1><b>Related </b>Products</h1> 
                 </div>
-                <div class="row list-product">
-                    <div class="product">
-                        <div class="product-tool">
-                            <div class="change-hover-hot" style="position: absolute;">
-                                <a href=""><i class="fa-regular fa-heart"></i></a>
-                                <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                            </div>
-                            <img src="img/flycam.png" alt="Loading..."> 
-                        </div>
-                        <div class="price"> 
-                            <h3 class="price-sale">$169.95</h3>
-                            <strike class="price-cost">$269.00</strike>
-                        </div>  
-                        <div class="info">
-                            <p>Hover Camera Passport Personal Photogragrapher</p>
-                        </div> 
-                    </div>
-                    <div class="product">
-                        <div class="product-tool">
-                            <div class="change-hover-hot" style="position: absolute;">
-                                <a href=""><i class="fa-regular fa-heart"></i></a>
-                                <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                            </div>
-                            <img src="img/flycam.png" alt="Loading..."> 
-                        </div>
-                        <div class="price"> 
-                            <h3 class="price-sale">$169.95</h3>
-                            <strike class="price-cost">$269.00</strike>
-                        </div>  
-                        <div class="info">
-                            <p>Hover Camera Passport Personal Photogragrapher</p>
-                        </div> 
-                    </div>
-                    <div class="product">
-                        <div class="product-tool">
-                            <div class="change-hover-hot" style="position: absolute;">
-                                <a href=""><i class="fa-regular fa-heart"></i></a>
-                                <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                            </div>
-                            <img src="img/flycam.png" alt="Loading...">
-                        </div>
-                        <div class="price"> 
-                            <h3 class="price-sale">$169.95</h3>
-                            <strike class="price-cost">$269.00</strike>
-                        </div>  
-                        <div class="info">
-                            <p>Hover Camera Passport Personal Photogragrapher</p>
-                        </div> 
-                    </div>
-                    <div class="product">
-                        <div class="product-tool">
-                            <div class="change-hover-hot" style="position: absolute;">
-                                <a href=""><i class="fa-regular fa-heart"></i></a>
-                                <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                            </div>
-                            <img src="img/flycam.png" alt="Loading...">
-                        </div>
-                        <div class="price"> 
-                            <h3 class="price-sale">$169.95</h3>
-                            <strike class="price-cost">$269.00</strike>
-                        </div>  
-                        <div class="info">
-                            <p>Hover Camera Passport Personal Photogragrapher</p>
-                        </div> 
-                    </div>
-                    <div class="product">
-                        <div class="product-tool">
-                            <div class="change-hover-hot" style="position: absolute;">
-                                <a href=""><i class="fa-regular fa-heart"></i></a>
-                                <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                            </div>
-                            <img src="img/flycam.png" alt="Loading...">
-                        </div>
-                        <div class="price"> 
-                            <h3 class="price-sale">$169.95</h3>
-                            <strike class="price-cost">$269.00</strike>
-                        </div>  
-                        <div class="info">
-                            <p>Hover Camera Passport Personal Photogragrapher</p>
-                        </div> 
-                    </div>
-                    <div class="product">
-                        <div class="product-tool">
-                            <div class="change-hover-hot" style="position: absolute;">
-                                <a href=""><i class="fa-regular fa-heart"></i></a>
-                                <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                            </div>
-                            <img src="img/flycam.png" alt="Loading...">
-                        </div>
-                        <div class="price"> 
-                            <h3 class="price-sale">$169.95</h3>
-                            <strike class="price-cost">$269.00</strike>
-                        </div>  
-                        <div class="info">
-                            <p>Hover Camera Passport Personal Photogragrapher</p>
-                        </div> 
-                    </div>
-                   
+                <div class="col-md-6 change">
+                    <a href=""><i class="fa-solid fa-angle-left"></i></a>
+                    <a href=""><i class="fa-solid fa-angle-right"></i></a>
                 </div>
             </div>
-            <div class="background-img">
+            <div class="row list-product">
+                <div class="product">
+                    <div class="product-tool">
+                        <div class="change-hover-hot" style="position: absolute;">
+                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                        </div>
+                        <img src="img/flycam.png" alt="Loading..."> 
+                    </div>
+                    <div class="price"> 
+                        <h3 class="price-sale">$169.95</h3>
+                        <strike class="price-cost">$269.00</strike>
+                    </div>  
+                    <div class="info">
+                        <p>Hover Camera Passport Personal Photogragrapher</p>
+                    </div> 
+                </div>
+                <div class="product">
+                    <div class="product-tool">
+                        <div class="change-hover-hot" style="position: absolute;">
+                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                        </div>
+                        <img src="img/flycam.png" alt="Loading..."> 
+                    </div>
+                    <div class="price"> 
+                        <h3 class="price-sale">$169.95</h3>
+                        <strike class="price-cost">$269.00</strike>
+                    </div>  
+                    <div class="info">
+                        <p>Hover Camera Passport Personal Photogragrapher</p>
+                    </div> 
+                </div>
+                <div class="product">
+                    <div class="product-tool">
+                        <div class="change-hover-hot" style="position: absolute;">
+                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                        </div>
+                        <img src="img/flycam.png" alt="Loading...">
+                    </div>
+                    <div class="price"> 
+                        <h3 class="price-sale">$169.95</h3>
+                        <strike class="price-cost">$269.00</strike>
+                    </div>  
+                    <div class="info">
+                        <p>Hover Camera Passport Personal Photogragrapher</p>
+                    </div> 
+                </div>
+                <div class="product">
+                    <div class="product-tool">
+                        <div class="change-hover-hot" style="position: absolute;">
+                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                        </div>
+                        <img src="img/flycam.png" alt="Loading...">
+                    </div>
+                    <div class="price"> 
+                        <h3 class="price-sale">$169.95</h3>
+                        <strike class="price-cost">$269.00</strike>
+                    </div>  
+                    <div class="info">
+                        <p>Hover Camera Passport Personal Photogragrapher</p>
+                    </div> 
+                </div>
+                <div class="product">
+                    <div class="product-tool">
+                        <div class="change-hover-hot" style="position: absolute;">
+                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                        </div>
+                        <img src="img/flycam.png" alt="Loading...">
+                    </div>
+                    <div class="price"> 
+                        <h3 class="price-sale">$169.95</h3>
+                        <strike class="price-cost">$269.00</strike>
+                    </div>  
+                    <div class="info">
+                        <p>Hover Camera Passport Personal Photogragrapher</p>
+                    </div> 
+                </div>
+                <div class="product">
+                    <div class="product-tool">
+                        <div class="change-hover-hot" style="position: absolute;">
+                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                        </div>
+                        <img src="img/flycam.png" alt="Loading...">
+                    </div>
+                    <div class="price"> 
+                        <h3 class="price-sale">$169.95</h3>
+                        <strike class="price-cost">$269.00</strike>
+                    </div>  
+                    <div class="info">
+                        <p>Hover Camera Passport Personal Photogragrapher</p>
+                    </div> 
+                </div>
                 
             </div>
-        </div>
-        <div class="row on-sale-producs" style="font-size: 1.5rem;">
+        </div> -->
+       
+        <!-- On Sale Products -->
+        <div class="row on-sale-producs">
             <dic class="col-sm-2">
                 <div class="title-header">
                     <h4><b>On Sale </b>Products</h4> 
@@ -716,6 +827,9 @@
            
        
         </div>
+        <!-- End On Sale Products -->
+
+        <!-- Features -->
         <div class="row features">
             <div class="row col-sm-2">
                 <div class="col-sm-5 thumbnail">
@@ -762,21 +876,22 @@
                     <span>From <sup>$</sup>50 and up</span>
                 </div>
             </div>
-            <div class="row col-sm-2">
+            <div class="row col-sm-2" style="border: none;">
                 <div class="col-sm-5 thumbnail">
                     <img src="img/giaohang.png" alt="">
                 </div>
                 <div class="col-sm-7 features-description">
-                    <b>Free Delivery</b>
+                    <h4>Free Delivery</h4>
                     <span>From <sup>$</sup>50 and up</span>
                 </div>
             </div>
         </div>
-    </main>
+        <!-- End Features -->
+    </main> 
     <footer class="container-fluid">
 		<div class="row main-footer" >
 		   	<div class="col-sm-2 inner-right">            
-                <h2><b>Media</b>market</h2>   
+                <h3><b>Media</b>market</h3> 
 				<p class="phone">+1(732) 446-6721</p>
                 <span>Media Merket, LLC 5 South Main Street, Englishtown, NJ 07726</span>
 				<p class="icon-inner">
@@ -787,7 +902,7 @@
 				</p>
         	</div>
         	<div class="col-sm-2 inner " >
-				<a href=""><h3>About Us</h3></a>
+				<a href=""><h4>About Us</h4></a>
 				<a href="">Company info</a>
                 <a href="">News</a>
                 <a href="">Investors</a>
@@ -795,7 +910,7 @@
                 <a href="">Goverment relations</a>
 			</div>
             <div class="col-sm-2 inner " >
-				<a href=""><h3>Shop by Category</h3></a>
+				<a href=""><h4>Shop by Category</h4></a>
 				<a href="">Today's Deals</a>
                 <a href="">Best Sellers</a>
                 <a href="">New Arrivals</a>
@@ -804,7 +919,7 @@
                 <a href="">Featured</a>
 			</div>
             <div class="col-sm-2 inner " >
-				<a href=""><h3>Support and Service</h3></a>
+				<a href=""><h4>Support and Service</h4></a>
 				<a href="">Customer Service</a>
                 <a href="">Protections Plans</a>
                 <a href="">Schedule a Service</a>
@@ -813,7 +928,7 @@
                 <a href="">FAQ</a>
 			</div>
             <div class="col-sm-2 inner " >
-				<a href=""><h3>Partnerships</h3></a>
+				<a href=""><h4>Partnerships</h4></a>
 				<a href="">Affiliate Program</a>
                 <a href="">Developers</a>
                 <a href="">Mediamarket Ignite </a>
@@ -822,7 +937,7 @@
                 <a href="">Advertise with Us</a>
 			</div>
             <div class="col-sm-2 inner " >
-				<a href=""><h3>Customer Care</h3></a>
+				<a href=""><h4>Customer Care</h4></a>
 				<a href="">My Account</a>
                 <a href="">Track Order</a>
                 <a href="">Shop</a>
@@ -832,23 +947,27 @@
 			</div>
 		</div>
 		<section >
-			<div class="row newsletter">
-                <p>Get the latest deals and more</p>
-				<div class="col-sm-4" style="text-align: center;">
-	            	<p>@ 2017 Mediamarket. All right reserved</p>
-	    		</div>
-                <div class="col-sm-4 feedback">
-                    <form>
-                        <div class="input-group mb-3">
-                          <input class="form-control" placeholder="Enter your email address">
-                          <div class="input-group-append">
-                            <span class="input-group-text"><i class="fa-solid fa-paper-plane"></i></span>
-                          </div>
-                        </div>
+			<div class="row footer-end" style="display: flex; flex-direction: column; padding: 50px 0px; ">
+                <h2>Get the latest deals and more</h2>
+                <span style="padding: 10px 0 20px 0px;">Subscribe our newsletter and get discount 30% off</span>
+                <div class="email" style="width: 100%;">
+                    <form class="example" action="" style="max-width: 35%; margin: 0 auto;">
+                        <input type="text" placeholder="Enter your email address" name="search2">
+                        <button type="submit" style="   padding: 0;">Subscribe</button>
                       </form>
                 </div>
 			</div>
 		</section>
-	</footer>
-</body>
-</html>
+	</footer> 
+  
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/slider/js/splide.min.js"></script>
+    <script type="text/javascript" src="./js/time.js"></script>
+    <script src="./js/zoom.js"></script>
+    <script>
+          $(document).ready(function(){
+           $('.sub-menu').parent('li').addClass('has-child')
+          })
+    </script>
+
