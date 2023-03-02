@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./lib/slider/css/themes/splide-skyblue.min.css">
 
     <link rel="stylesheet" href="css/style.css"/>
-    <title>Mediamerket</title>
+    <title>Mediamarket</title>
 </head>
 <body>
     <header>
@@ -109,7 +109,7 @@
                     <li><a href="">Products</a></li>
                     <li><a href="">Brains</a></li>
                     <li><a href="">Today Deals</a></li>
-                    <li><a href="">New Arivals</a></li>
+                    <li><a href="">New Arrivals</a></li>
                     <a href=""><i class="menu-btnright fa-solid fa-ellipsis-vertical"></i></a>
                 </div>                    
             </div> 
@@ -117,6 +117,7 @@
         
     </header> 
     <main>  
+
         <div class="container-slideshow">
             <section>
                 <div class="container-slide">
@@ -187,6 +188,8 @@
                 </div>
             </section>  
         </div>
+
+
         <div class="row category">
             <div class="row col-sm-4 type"style="background: #5b4bdf">
                 <div class="col-sm-7 cate-infor">
@@ -225,46 +228,55 @@
                 </div>  
             </div>
         </div>
+
         <!-- Best Selling Products -->
         <div class="row full-category">
             <div class="col-sm-2 selling-product">
                 <h1><b>2017's</b><br>Best Selling Products</h1>
-                
-                <div class="catalog">
-                    <a href="">full catalog</a>
-                </div>
+                <a href="">full catalog</a>
             </div>
             <div class="col-sm-10 list-product">
-                <section id="splide-best-selling" class="splide" aria-labelledby="carousel-heading">
-                    <div class="splide__arrows">
-                        <button class="splide__arrow splide__arrow--prev">
-                            <i class="fa-solid fa-angle-left-best-seller"></i>
+                <section id="splide-best-selling" class="splide" aria-labelledby="carousel-heading" style="width: 100%; padding: 0; margin-top: -17px;">
+                    <div class="splide__arrows" >
+                        <button class="splide__arrow splide__arrow--prev" 
+                            style="margin-left: -14pc; margin-top: 2pc;
+                                     background-color: #f5f5f5;
+                                    border: 2px solid #eeeeee;
+                                    font-size: 20px;
+                                    color: #7f7f7f;
+                                    border-radius: 50%;">
+                            <i class="fa-solid fa-angle-left"></i>
                         </button>
-                        <button class="splide__arrow splide__arrow--next">
-                            <i class="fa-solid fa-angle-right-best-seller"></i>
+                        <button class="splide__arrow splide__arrow--next" 
+                            style=" margin-right: 67pc; margin-top: 2pc;
+                                    background-color: #f5f5f5;
+                                    border: 2px solid #eeeeee;
+                                    font-size: 20px;
+                                    color: #7f7f7f;
+                                    border-radius: 50%;">
+                            <i class="fa-solid fa-angle-right"></i>
                         </button>
                     </div>
-                    <div class="splide__track" style="margin: -1.5% 27% 0 29%;">
+                    <div class="splide__track" >
                           <ul class="splide__list">
                             <li class="splide__slide" style="display: flex;">
-                                <div class="lst-picproduct">
+                                <div id="type-product" class="product" style="padding: 0;">
                                     <img src="img/flycam.png" alt="Loading..." style="width: 70%;">
                                     <p>Audio</p>
                                 </div>
-                         
-                                <div class="lst-picproduct">
+                                <div id="type-product" class="product" style="padding: 0;">
                                     <img src="img/flycam.png" alt="Loading..." style="width: 70%;">
                                     <p>Premium TV</p>
                                 </div>                        
-                                <div class="lst-picproduct">
+                                <div id="type-product" class="product" style="padding: 0;">
                                     <img src="img/flycam.png" alt="Loading..." style="width: 70%;">
                                     <p>Gadgets</p>
                                 </div>                           
-                                <div class="lst-picproduct">
+                                <div id="type-product" class="product" style="padding: 0;">
                                     <img src="img/flycam.png" alt="Loading..." style="width: 70%;">
                                     <p>Tablets</p>
                                 </div>                       
-                                <div class="lst-picproduct">
+                                <div id="type-product" class="product" style="padding: 0;">
                                     <img src="img/flycam.png" alt="Loading..." style="width: 70%;">
                                     <p>headphones</p>
                                 </div> 
@@ -281,17 +293,6 @@
         <!-- Deal of the month -->
         <div class="row deals-month">
             <div class="col-sm-4 sale">
-                <!-- <section class="splide" aria-labelledby="carousel-heading" style="position: absolute;">
-                    <h2 id="carousel-heading">Basic Structure Example</h2>
-                  
-                    <div class="splide__track">
-                          <ul class="splide__list">
-                              <li class="splide__slide">Slide 01</li>
-                              <li class="splide__slide">Slide 02</li>
-                              <li class="splide__slide">Slide 03</li>
-                          </ul>
-                    </div>
-                  </section> -->
                   <section id="splide-deal-month" class="splide" aria-label="Restriction Example">
                     <div class="splide__arrows" >
                         <button class="splide__arrow splide__arrow--prev" style="margin-top: -82%;">
@@ -333,7 +334,7 @@
                                 </div>
                             </div>
                             <div class="end">
-                                <h1>Hury up!</h1>
+                                <h1>Hurry up!</h1>
                                 <p>Offer Ends In:</p>
                             </div>
                             <div class="row time-sale">   
@@ -368,34 +369,37 @@
                             <li><a href="">Best Rated</a></li>
                             <li><a href="">Popular Products</a></li>
                     </div>  
-                    <div class="col-sm-2 change">  
-                        <a href=""><i class="fa-solid fa-angle-left"></i></a>
-                        <a href=""><i class="fa-solid fa-angle-right"></i></a>
-                    </div> 
                 </div>
-                <div class="container-detal-month">
-                    <section>
-                        <div id="pic-month" class="carousel slide" data-ride="carousel" data-interval="3000">             
-                            <!-- Indicators -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
+                <div class="container-detail-month">
+                    <section id="list-splide-deal-month" class="splide" aria-label="Restriction Example" style="padding: 0;">
+                        <div class="splide__arrows" >
+                            <button class="splide__arrow splide__arrow--prev" style="margin-top: -44%; margin-left: 91%;">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                            <button class="splide__arrow splide__arrow--next" style="margin-top: -44%;">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide">
                                 <div class="product-list-sale">
                                     <div class="product">
-                                        <img src="img/flycam.png" alt="Loading..." >
+                                        <img src="img/flycam.png" alt="Loading..." style="width: 80%;">
                                         <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
                                         </div> 
                                     </div>  
                                     <div class="product">
-                                        <img src="img/flycam.png" alt="Loading..." >
+                                        <img src="img/flycam.png" alt="Loading..." style="width: 80%;">
                                         <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
                                         </div> 
                                     </div> 
                                     <div class="product">
-                                        <img src="img/flycam.png" alt="Loading..." >
+                                        <img src="img/flycam.png" alt="Loading..." style="width: 80%;">
                                         <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
@@ -404,145 +408,31 @@
                                 </div>   
                                 <div class="product-list-sale">
                                     <div class="product">
-                                        <div class="deal-sale--yelllow" style="position: absolute;">                                          
-                                            <p class="deals-price">-35%</p>
-                                        </div>
-                                        <img src="img/flycam.png" alt="Loading..." >
+                                        <img src="img/flycam.png" alt="Loading..." style="width: 80%;">
                                         <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
                                         </div> 
                                     </div>  
                                     <div class="product">
-                                        <img src="img/flycam.png" alt="Loading..." >
+                                        <img src="img/flycam.png" alt="Loading..." style="width: 80%;">
                                         <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
                                         </div> 
                                     </div> 
                                     <div class="product">
-                                        <div class="deal-sale--red" style="position: absolute;">                                          
-                                            <p class="deals-price">Hot</p>
-                                        </div>
-                                        <img src="img/flycam.png" alt="Loading..." >
+                                        <img src="img/flycam.png" alt="Loading..." style="width: 80%;">
                                         <h4 class="price">$299.95</h4>                
                                         <div class="info">
                                             <p>Beats Solo3 Wireless On-Ear Headphones</p>
                                         </div> 
                                     </div> 
-                                </div>  				
-                            </div>
-                            <div class="carousel-item">
-                                <div class="product-list-sale">
-                                    <div class="product">
-                                        <img src="img/flycam.png" alt="Loading..." >
-                                        <h4 class="price">$299.95</h4>                
-                                        <div class="info">
-                                            <p>Beats Solo3 Wireless On-Ear Headphones</p>
-                                        </div> 
-                                    </div>  
-                                    <div class="product">
-                                        <img src="img/flycam.png" alt="Loading..." >
-                                        <h4 class="price">$299.95</h4>                
-                                        <div class="info">
-                                            <p>Beats Solo3 Wireless On-Ear Headphones</p>
-                                        </div> 
-                                    </div> 
-                                    <div class="product">
-                                        <img src="img/flycam.png" alt="Loading..." >
-                                        <h4 class="price">$299.95</h4>                
-                                        <div class="info">
-                                            <p>Beats Solo3 Wireless On-Ear Headphones</p>
-                                        </div> 
-                                    </div> 
-                                </div> 
-                                <div class="product-list-sale">
-                                    <div class="product">
-                                        <img src="img/flycam.png" alt="Loading..." >
-                                        <h4 class="price">$299.95</h4>                
-                                        <div class="info">
-                                            <p>Beats Solo3 Wireless On-Ear Headphones</p>
-                                        </div> 
-                                    </div>  
-                                    <div class="product">
-                                        <img src="img/flycam.png" alt="Loading..." >
-                                        <h4 class="price">$299.95</h4>                
-                                        <div class="info">
-                                            <p>Beats Solo3 Wireless On-Ear Headphones</p>
-                                        </div> 
-                                    </div> 
-                                    <div class="product">
-                                        <img src="img/flycam.png" alt="Loading..." >
-                                        <h4 class="price">$299.95</h4>                
-                                        <div class="info">
-                                            <p>Beats Solo3 Wireless On-Ear Headphones</p>
-                                        </div> 
-                                    </div> 
-                                </div>       				
-                            </div>
-                            <div class="carousel-item">
-                                <div class="product-list-sale">
-                                    <div class="product">
-                                        <img src="img/flycam.png" alt="Loading..." >
-                                        <h3 class="price">$299.95</h3>                
-                                        <div class="info">
-                                            <p>Beats Solo3 Wireless On-Ear Headphones</p>
-                                        </div> 
-                                    </div>  
-                                    <div class="product">
-                                        <img src="img/flycam.png" alt="Loading..." >
-                                        <h3 class="price">$299.95</h3>                
-                                        <div class="info">
-                                            <p>Beats Solo3 Wireless On-Ear Headphones</p>
-                                        </div> 
-                                    </div> 
-                                    <div class="product">
-                                        <img src="img/flycam.png" alt="Loading..." >
-                                        <h3 class="price">$299.95</h3>                
-                                        <div class="info">
-                                            <p>Beats Solo3 Wireless On-Ear Headphones</p>
-                                        </div> 
-                                    </div> 
-                                </div>
-                                <div class="product-list-sale">
-                                    <div class="product">
-                                        <img src="img/flycam.png" alt="Loading..." >
-                                        <h3 class="price">$299.95</h3>                
-                                        <div class="info">
-                                            <p>Beats Solo3 Wireless On-Ear Headphones</p>
-                                        </div> 
-                                    </div>  
-                                    <div class="product">
-                                        <img src="img/flycam.png" alt="Loading..." >
-                                        <h3 class="price">$299.95</h3>                
-                                        <div class="info">
-                                            <p>Beats Solo3 Wireless On-Ear Headphones</p>
-                                        </div> 
-                                    </div> 
-                                    <div class="product">
-                                        <img src="img/flycam.png" alt="Loading..." >
-                                        <h3 class="price">$299.95</h3>                
-                                        <div class="info">
-                                            <p>Beats Solo3 Wireless On-Ear Headphones</p>
-                                        </div> 
-                                    </div> 
-                                </div>        			
-                            </div>
+                                </div>   
+                            </li>
+                          </ul>
                         </div>
-                        <ul class="carousel-indicators">
-                            <li data-target="#pic-month" data-slide-to="0" class="active"></li>
-                            <li data-target="#pic-month" data-slide-to="1"></li>
-                            <li data-target="#pic-month" data-slide-to="2"></li>
-                        </ul>
-                        <!-- Left and right controls -->
-                        <!-- <a class="carousel-control-prev" href="#pic" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#pic" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a> -->
-                        </div>
-                    </section>
+                      </section>
                 </div>               
             </div>
         </div>
@@ -550,147 +440,143 @@
 
         <!-- Best Sellers Products -->
         <div class="best-seller-product">
-            <div class="row best-seller">
-                <div class="col-md-6 title-header">
-                        <h1><b>Best Sellers </b>Products</h1> 
+            <div class="best-seller">
+                <h1><b>Best Sellers </b>Products</h1> 
+            </div>
+            <section id="splide-best-seller" class="splide" aria-label="Restriction Example" style="width: 100%; padding: 0;">
+                <div class="splide__arrows" >
+                    <button class="splide__arrow splide__arrow--prev" style="margin-top: -13%; margin-left: 94%;">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next" style="margin-top: -13%;">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
                 </div>
-            </div>
-            <section id="splide-best-seller" class="splidea" aria-label="Restriction Example">
-                    <div class="splide__arrows">
-                        <button class="splide__arrow splide__arrow--prev">
-                            <i class="fa-solid fa-angle-left-best-seller"></i>
-                        </button>
-                        <button class="splide__arrow splide__arrow--next">
-                            <i class="fa-solid fa-angle-right-best-seller"></i>
-                        </button>
-                    </div>
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide" style="display: flex;">
-                                <div class="product">
-                                    <div class="product-tool">
-                                        <div class="change-hover-hot" style="position: absolute;">
-                                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                                        </div>
-                                        <img src="img/flycam.png" alt="Loading..." > 
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide" style="display: flex;">
+                            <div class="product">
+                                <div class="product-tool">
+                                    <div class="change-hover-hot" style="position: absolute;">
+                                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                                        <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
                                     </div>
-                                    <div class="price"> 
-                                        <h3 class="price-sale">$169.95</h3>
-                                        <strike class="price-cost">$269.00</strike>
-                                    </div>  
-                                    <div class="info">
-                                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                                    </div> 
+                                    <img src="img/flycam.png" alt="Loading..." style="width: 80%;"> 
                                 </div>
-                                <div class="product">
-                                    <div class="product-tool">
-                                        <div class="change-hover-hot" style="position: absolute;">
-                                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                                        </div>
-                                        <img src="img/flycam.png" alt="Loading..." > 
+                                <div class="price"> 
+                                    <h3 class="price-sale">$169.95</h3>
+                                    <strike class="price-cost">$269.00</strike>
+                                </div>  
+                                <div class="info">
+                                    <p>Hover Camera Passport Personal Photographer</p>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <div class="product-tool">
+                                    <div class="change-hover-hot" style="position: absolute;">
+                                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                                        <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
                                     </div>
-                                    <div class="price"> 
-                                        <h3 class="price-sale">$169.95</h3>
-                                        <strike class="price-cost">$269.00</strike>
-                                    </div>  
-                                    <div class="info">
-                                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                                    </div> 
+                                    <img src="img/flycam.png" alt="Loading..." style="width: 80%;"> 
                                 </div>
-                                <div class="product">
-                                    <div class="product-tool">
-                                        <div class="change-hover-hot" style="position: absolute;">
-                                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                                        </div>
-                                        <img src="img/flycam.png" alt="Loading..." > 
+                                <div class="price"> 
+                                    <h3 class="price-sale">$169.95</h3>
+                                    <strike class="price-cost">$269.00</strike>
+                                </div>  
+                                <div class="info">
+                                    <p>Hover Camera Passport Personal Photographer</p>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <div class="product-tool">
+                                    <div class="change-hover-hot" style="position: absolute;">
+                                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                                        <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
                                     </div>
-                                    <div class="price"> 
-                                        <h3 class="price-sale">$169.95</h3>
-                                        <strike class="price-cost">$269.00</strike>
-                                    </div>  
-                                    <div class="info">
-                                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                                    </div> 
+                                    <img src="img/flycam.png" alt="Loading..." style="width: 80%;"> 
                                 </div>
-                                <div class="product">
-                                    <div class="product-tool">
-                                        <div class="change-hover-hot" style="position: absolute;">
-                                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                                        </div>
-                                        <img src="img/flycam.png" alt="Loading..." > 
+                                <div class="price"> 
+                                    <h3 class="price-sale">$169.95</h3>
+                                    <strike class="price-cost">$269.00</strike>
+                                </div>  
+                                <div class="info">
+                                    <p>Hover Camera Passport Personal Photographer</p>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <div class="product-tool">
+                                    <div class="change-hover-hot" style="position: absolute;">
+                                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                                        <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
                                     </div>
-                                    <div class="price"> 
-                                        <h3 class="price-sale">$169.95</h3>
-                                        <strike class="price-cost">$269.00</strike>
-                                    </div>  
-                                    <div class="info">
-                                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                                    </div> 
+                                    <img src="img/flycam.png" alt="Loading..." style="width: 80%;"> 
                                 </div>
-                                <div class="product">
-                                    <div class="product-tool">
-                                        <div class="change-hover-hot" style="position: absolute;">
-                                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                                        </div>
-                                        <img src="img/flycam.png" alt="Loading..." > 
+                                <div class="price"> 
+                                    <h3 class="price-sale">$169.95</h3>
+                                    <strike class="price-cost">$269.00</strike>
+                                </div>  
+                                <div class="info">
+                                    <p>Hover Camera Passport Personal Photographer</p>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <div class="product-tool">
+                                    <div class="change-hover-hot" style="position: absolute;">
+                                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                                        <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
                                     </div>
-                                    <div class="price"> 
-                                        <h3 class="price-sale">$169.95</h3>
-                                        <strike class="price-cost">$269.00</strike>
-                                    </div>  
-                                    <div class="info">
-                                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                                    </div> 
+                                    <img src="img/flycam.png" alt="Loading..." style="width: 80%;"> 
                                 </div>
-                                <div class="product">
-                                    <div class="product-tool">
-                                        <div class="change-hover-hot" style="position: absolute;">
-                                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                                        </div>
-                                        <img src="img/flycam.png" alt="Loading..." > 
+                                <div class="price"> 
+                                    <h3 class="price-sale">$169.95</h3>
+                                    <strike class="price-cost">$269.00</strike>
+                                </div>  
+                                <div class="info">
+                                    <p>Hover Camera Passport Personal Photographer</p>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <div class="product-tool">
+                                    <div class="change-hover-hot" style="position: absolute;">
+                                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                                        <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
                                     </div>
-                                    <div class="price"> 
-                                        <h3 class="price-sale">$169.95</h3>
-                                        <strike class="price-cost">$269.00</strike>
-                                    </div>  
-                                    <div class="info">
-                                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                                    </div> 
+                                    <img src="img/flycam.png" alt="Loading..." style="width: 80%;"> 
                                 </div>
-                                
-                            </li>
-                        </ul>
-                      </div>
-                  </section>  
-            <div class="row list-product">
-                <!--  -->
-            </div>
+                                <div class="price"> 
+                                    <h3 class="price-sale">$169.95</h3>
+                                    <strike class="price-cost">$269.00</strike>
+                                </div>  
+                                <div class="info">
+                                    <p>Hover Camera Passport Personal Photographer</p>
+                                </div> 
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </section>  
+           
         </div>
 
-        <!-- Today's Detals -->
-        <div class="today-detals">
-            <h1><b>Today's </b>Detals</h1> 
+        <!-- Today's Details -->
+        <div class="today-details">
+            <h1><b>Today's </b>Details</h1> 
             <div class="menu-product">
                 <div class="menu-change">          
-                    <li><a href="" style="color: red;">TV & Audio</a></li>
+                    <li><a href="" style="color: #000;">TV & Audio</a></li>
                     <li><a href="">Computers & Laptops</a></li>
                     <li><a href="">Camera & Photos</a></li>
                     <li><a href="">Car Electronics & GPS</a></li>
                 </div>  
             </div>
-            <div class="container-today-detals">
+            <div class="container-today-details">
                 <section>
-                    <div id="pic-today-detals" class="carousel slide" data-ride="carousel" data-interval="3000">             
+                    <div id="pic-today-details" class="carousel slide" data-ride="carousel" data-interval="3000">             
                         <ul class="carousel-indicators">
-                            <li data-target="#pic-today-detals" data-slide-to="0" class="active"></li>
-                            <li data-target="#pic-today-detals" data-slide-to="1"></li>
-                            <li data-target="#pic-today-detals" data-slide-to="2"></li>
+                            <li data-target="#pic-today-details" data-slide-to="0" class="active"></li>
+                            <li data-target="#pic-today-details" data-slide-to="1"></li>
+                            <li data-target="#pic-today-details" data-slide-to="2"></li>
                         </ul>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -1239,11 +1125,11 @@
         <div class="hot-new-arrivals">
             <div class="row hot-new">
                 <div class="col-md-6 title-header">
-                        <h1><b>Hot </b>New Arivals</h1> 
+                        <h1><b>Hot </b>New Arrivals</h1> 
                 </div>
                 <div class="col-md-6 menu-product">
                     <div class="menu-change">          
-                            <li><a href="" style="color: red;">Top 20</a></li>
+                            <li><a href="" style="color: #000;">Top 20</a></li>
                             <li><a href="">TV & Audio</a></li>
                             <li><a href="">Cameras & Photos</a></li>
                             <li><a href="">Movie and Music</a></li>
@@ -1549,7 +1435,7 @@
 
         <!-- Recommended based on recent browsing -->
         <div class="recommended"> 
-            <div class="container-detal">
+            <div class="container-detail">
                 <section>
                     <div id="pic-recommended" class="carousel slide" data-ride="carousel" data-interval="3000">
                     <!-- Indicators -->
@@ -1794,7 +1680,7 @@
                 </div>
                 <div class="col-md-6 menu-product">
                     <div class="menu-change">          
-                            <li><a href="" style="color: red;">Top 20</a></li>
+                            <li><a href="" style="color: #000;">Top 20</a></li>
                             <li><a href="">TV & Audio</a></li>
                             <li><a href="">Cameras & Photos</a></li>
                             <li><a href="">Movie and Music</a></li>
@@ -1883,68 +1769,81 @@
 
         <!-- Recently Viewed Products -->
         <div class="recently-viewed">
-            <div class="row recently-viewed">
+            <div class="row recently-viewed-top">
                 <div class="col-md-6 title-header">
                         <h1><b>Recently Viewed </b>Products</h1> 
                 </div>
-                <div class="col-md-6 change">
-                    <a href=""><i class="fa-solid fa-angle-left"></i></a>
-                    <a href=""><i class="fa-solid fa-angle-right"></i></a>
-                </div>
             </div>
-            <div class="row list-product-hori">
-                <div class="row col-sm-4 product-hori">
-                    <div class="col-sm-5 thumbnail">
-                       <img src="img/loabluetooth.png" alt="" width="100%">
+            <div class="list-product-hori">
+                <section id="splide-recently-viewed" class="splide" aria-label="Basic Structure Example" style="padding: 0;">
+                    <div class="splide__arrows" >
+                        <button class="splide__arrow splide__arrow--prev" style="margin-top: -10%; margin-left: 94%;">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                        <button class="splide__arrow splide__arrow--next" style="margin-top: -10%;">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
                     </div>
-                    <div class="col-sm-7 detail">
-                        <p class="price">$599.95</p>
-                        <p class="description">DJI Zenmuse X4S Camera</p>
-                        <div class="evaluate">	
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>           
-                            <span>(Based on 5 reviews)</span>
-                        </div>
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="row splide__slide">
+                                <div class="row col-sm-4 product-hori">
+                                    <div class="col-sm-5 thumbnail">
+                                        <img src="img/loabluetooth.png" alt="" width="100%">
+                                    </div>
+                                    <div class="col-sm-7 detail">
+                                        <p class="price">$599.95</p>
+                                        <p class="description">DJI Zenmuse X4S Camera</p>
+                                        <div class="evaluate">	
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>           
+                                            <span>(Based on 5 reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>	
+                                <div class="row col-sm-4 product-hori">
+                                    <div class="col-sm-5 thumbnail">
+                                        <img src="img/loabluetooth.png" alt="" width="100%">
+                                    </div>
+                                    <div class="col-sm-7 detail">
+                                        <p class="price">$3 299.99</p>
+                                        <p class="description">65" Class Q8C Curved QLED 4K TV</p>
+                                        <div class="evaluate">	
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>                              
+                                            <span>(Based on 5 reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>	
+                                <div class="row col-sm-4 product-hori">
+                                    <div class="col-sm-5 thumbnail">
+                                        <img src="img/loabluetooth.png" alt="" width="100%">
+                                    </div>
+                                    <div class="col-sm-7 detail">
+                                        <p class="price">$3 299.99</p>
+                                        <p class="description">65" Class Q8C Curved QLED 4K TV</p>
+                                        <div class="evaluate">	
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>                            
+                                            <span>(Based on 5 reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>   
+                            </li>
+                        </ul>
                     </div>
-                </div>	
-                <div class="row col-sm-4 product-hori">
-                    <div class="col-sm-5 thumbnail">
-                       <img src="img/loabluetooth.png" alt="" width="100%">
-                    </div>
-                    <div class="col-sm-7 detail">
-                        <p class="price">$3 299.99</p>
-                        <p class="description">65" Class Q8C Curved QLED 4K TV</p>
-                        <div class="evaluate">	
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>                              
-                            <span>(Based on 5 reviews)</span>
-                        </div>
-                    </div>
-                </div>	
-                <div class="row col-sm-4 product-hori">
-                    <div class="col-sm-5 thumbnail">
-                       <img src="img/loabluetooth.png" alt="" width="100%">
-                    </div>
-                    <div class="col-sm-7 detail">
-                        <p class="price">$3 299.99</p>
-                        <p class="description">65" Class Q8C Curved QLED 4K TV</p>
-                        <div class="evaluate">	
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>                            
-                            <span>(Based on 5 reviews)</span>
-                        </div>
-                    </div>
-                </div>               
-            </div>
+                </section>
+            </div>                
+        </div>
         </div>
         <!-- End Recently Viewed Products -->
 
@@ -2443,6 +2342,7 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="./lib/slider/js/splide.min.js"></script>
     <script type="text/javascript" src="./js/time.js"></script>
+    <script type="text/javascript" src="./js/slider.js"></script>
    
     <script>
           $(document).ready(function(){
@@ -2549,22 +2449,10 @@
             focus: 0,
     });
         splide.mount();   
-    new Splide( '.splide', {
-    rewind: true,
-    } );
+   
     </script>
+    
 
-    <script>
-        var splidea = new Splide('.splidea', {
-            type: 'loop',
-            perPage: 1,
-            focus: 0,
-    });
-        splide.mount();   
-    new Splide( '.splidea', {
-    rewind: true,
-    } );
-    </script>
 
 </body>
 </html>

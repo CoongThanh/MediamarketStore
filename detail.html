@@ -14,6 +14,14 @@
     <title>Shop Detail Product Large</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/style-detail.css"/>
+
+     <!-- Slide -->
+     <link rel="stylesheet" href="./lib/slider/css/splide-core.min.css">
+     <link rel="stylesheet" href="./lib/slider/css/splide.min.css">
+     <link rel="stylesheet" href="./lib/slider/css/themes/splide-default.min.css">
+     <link rel="stylesheet" href="./lib/slider/css/themes/splide-sea-green.min.css">
+     <link rel="stylesheet" href="./lib/slider/css/themes/splide-skyblue.min.css">
+ 
 </head>
 <body>
     <header>
@@ -103,7 +111,7 @@
                     <li><a href="">Products</a></li>
                     <li><a href="">Brains</a></li>
                     <li><a href="">Today Deals</a></li>
-                    <li><a href="">New Arivals</a></li>
+                    <li><a href="">New Arrivals</a></li>
                     <a href=""><i class="menu-btnright fa-solid fa-ellipsis-vertical"></i></a>
                 </div>                    
             </div> 
@@ -215,8 +223,7 @@
                             </div> 
                         </div>
                         <div style="text-align: center;">
-                           <input type="checkbox" id="product" name="check" value="449.99">
-                           <p style="font-weight: 500; font-size: 12px; color: #7f7f7f;">Selected</p>
+                            <input class="check-product-to-card" type="checkbox" name="" id="" value="449.99">                           <p style="font-weight: 500; font-size: 12px; color: #7f7f7f;">Selected</p>
                         </div>
                     </div>
                     <div style="width: 20%;">
@@ -233,8 +240,7 @@
                             </div> 
                         </div>
                         <div style="text-align: center;">
-                           <input type="checkbox" id="product" name="check" value="449.99">
-                           <p style="font-weight: 500; font-size: 12px; color: #7f7f7f;">Selected</p>
+                            <input class="check-product-to-card" type="checkbox" name="" id="" value="449.99">                           <p style="font-weight: 500; font-size: 12px; color: #7f7f7f;">Selected</p>
                         </div>
                     </div>
                     <div style="width: 20%;">
@@ -251,8 +257,7 @@
                             </div> 
                         </div>
                         <div style="text-align: center;">
-                           <input type="checkbox" id="product" name="check" value="449.99">
-                           <p style="font-weight: 500; font-size: 12px; color: #7f7f7f;">Selected</p>
+                            <input class="check-product-to-card" type="checkbox" name="" id="" value="449.99">                           <p style="font-weight: 500; font-size: 12px; color: #7f7f7f;">Selected</p>
                         </div>
                     </div>
                     <div style="width: 20%;">
@@ -269,8 +274,7 @@
                             </div> 
                         </div>
                         <div style="text-align: center;">
-                           <input type="checkbox" id="product" name="check" value="449.99">
-                           <p style="font-weight: 500; font-size: 12px; color: #7f7f7f;">Selected</p>
+                            <input class="check-product-to-card" type="checkbox" name="" id="" value="449.99">                           <p style="font-weight: 500; font-size: 12px; color: #7f7f7f;">Selected</p>
                         </div>
                     </div>
                     <div style="width: 20%;">
@@ -287,8 +291,7 @@
                             </div> 
                         </div>
                         <div style="text-align: center;">
-                           <input type="checkbox" id="product" name="check" value="449.99">
-                           <p style="font-weight: 500; font-size: 12px; color: #7f7f7f;">Selected</p>
+                            <input class="check-product-to-card" type="checkbox" name="" id="" value="449.99">                           <p style="font-weight: 500; font-size: 12px; color: #7f7f7f;">Selected</p>
                         </div>
                     </div>
                     
@@ -297,7 +300,7 @@
                     <div class="buy-this-bundle-center" style="width: 50%;">
                         <div style="display: flex; font-size: 21px; font-weight: 600; height: 32px;">
                             <span >Total Price:</span>
-                            <p class="price">$1,999.999</p>
+                            <p class="check_add_card" id="price-select-item">$0</p>
                         </div>   
                         <span style="font-size: 16px; color: #7f7f7f; font-weight: 500;">Bundle Price for Selected items</span>  
                     </div> 
@@ -327,8 +330,8 @@
             <div class="row content">
                 <div class="col-md-6 content-top">
                     <a href=""><i class="fa-brands fa-youtube"></i>Tutorials available on Youtube</a>
-                    <h2>Leave your phone alone</h2>
-                    <span>This true 360° speaker was engineered to spread deep, jaw-dropp sound in every deriction. 
+                    <h2>Leave your phone alone</h2>width="100%">
+                    <span>This true 360° speaker was engineered to spread deep, jaw-dropping sound in every direction. 
                         That means, when everyone stands around it, everyone gets the same experience</span>
                     <div class="row content-bottom">
                         <div class="col-sm-6 content-left">
@@ -366,7 +369,7 @@
                     </div>
                     <h2>SoundLink Revolve + Portable Bluetooth speaker</h2>
                     <span>Meet SoundLink Revolve+, the best-performing portable Bluetooth speaker from Bose. It's
-                        engineered to spread deep, jaw-dropping sound in every diretion</span>
+                        engineered to spread deep, jaw-dropping sound in every direction</span>
                     <div class="row advantage">
                         <div class="col-md-2 advantage-left">
                             <i class="fa-solid fa-heart"></i>
@@ -380,7 +383,7 @@
                     </div>
                     <div class="row advantage">
                         <div class="col-md-2 advantage-left">
-                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-fire-flame-curved"></i>
                         </div>
                         <div class="col-md-10 advantage-right">
                             <h6>HIGH-QUALITY</h6>
@@ -392,116 +395,118 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="best-seller-product">
-            <div class="row related">
-                <div class="col-md-6 title-header">
-                        <h1><b>Related </b>Products</h1> 
-                </div>
-                <div class="col-md-6 change">
-                    <a href=""><i class="fa-solid fa-angle-left"></i></a>
-                    <a href=""><i class="fa-solid fa-angle-right"></i></a>
-                </div>
+        <div class="related-product">
+            <div class="related">
+                <h1><b>Related </b>Products</h1> 
             </div>
-            <div class="row list-product">
-                <div class="product">
-                    <div class="product-tool">
-                        <div class="change-hover-hot" style="position: absolute;">
-                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                        </div>
-                        <img src="img/flycam.png" alt="Loading..."> 
-                    </div>
-                    <div class="price"> 
-                        <h3 class="price-sale">$169.95</h3>
-                        <strike class="price-cost">$269.00</strike>
-                    </div>  
-                    <div class="info">
-                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                    </div> 
+            <section id="splide-related-product" class="splide" aria-label="Restriction Example" style="width: 100%; padding: 0;">
+                <div class="splide__arrows" >
+                    <button class="splide__arrow splide__arrow--prev" style="margin-top: -13%; margin-left: 92%;">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next" style="margin-top: -13%;">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
                 </div>
-                <div class="product">
-                    <div class="product-tool">
-                        <div class="change-hover-hot" style="position: absolute;">
-                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                        </div>
-                        <img src="img/flycam.png" alt="Loading..."> 
-                    </div>
-                    <div class="price"> 
-                        <h3 class="price-sale">$169.95</h3>
-                        <strike class="price-cost">$269.00</strike>
-                    </div>  
-                    <div class="info">
-                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                    </div> 
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide" style="display: flex;">
+                            <div class="product">
+                                <div class="product-tool">
+                                    <div class="change-hover-hot" style="position: absolute;">
+                                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                                        <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                                    </div>
+                                    <img src="img/flycam.png" alt="Loading..." style="width: 80%;"> 
+                                </div>
+                                <div class="price"> 
+                                    <h3 class="price-sale">$169.95</h3>
+                                </div>  
+                                <div class="info">
+                                    <p>Hover Camera Passport Personal Photographer</p>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <div class="product-tool">
+                                    <div class="change-hover-hot" style="position: absolute;">
+                                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                                        <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                                    </div>
+                                    <img src="img/flycam.png" alt="Loading..." style="width: 80%;"> 
+                                </div>
+                                <div class="price"> 
+                                    <h3 class="price-sale">$169.95</h3>
+                                </div>  
+                                <div class="info">
+                                    <p>Hover Camera Passport Personal Photographer</p>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <div class="product-tool">
+                                    <div class="change-hover-hot" style="position: absolute;">
+                                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                                        <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                                    </div>
+                                    <img src="img/flycam.png" alt="Loading..." style="width: 80%;"> 
+                                </div>
+                                <div class="price"> 
+                                    <h3 class="price-sale">$169.95</h3>
+                                </div>  
+                                <div class="info">
+                                    <p>Hover Camera Passport Personal Photographer</p>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <div class="product-tool">
+                                    <div class="change-hover-hot" style="position: absolute;">
+                                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                                        <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                                    </div>
+                                    <img src="img/flycam.png" alt="Loading..." style="width: 80%;"> 
+                                </div>
+                                <div class="price"> 
+                                    <h3 class="price-sale">$169.95</h3>
+                                </div>  
+                                <div class="info">
+                                    <p>Hover Camera Passport Personal Photographer</p>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <div class="product-tool">
+                                    <div class="change-hover-hot" style="position: absolute;">
+                                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                                        <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                                    </div>
+                                    <img src="img/flycam.png" alt="Loading..." style="width: 80%;"> 
+                                </div>
+                                <div class="price"> 
+                                    <h3 class="price-sale">$169.95</h3>
+                                </div>  
+                                <div class="info">
+                                    <p>Hover Camera Passport Personal Photographer</p>
+                                </div> 
+                            </div>
+                            <div class="product">
+                                <div class="product-tool">
+                                    <div class="change-hover-hot" style="position: absolute;">
+                                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                                        <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
+                                    </div>
+                                    <img src="img/flycam.png" alt="Loading..." style="width: 80%;"> 
+                                </div>
+                                <div class="price"> 
+                                    <h3 class="price-sale">$169.95</h3>
+                                </div>  
+                                <div class="info">
+                                    <p>Hover Camera Passport Personal Photographer</p>
+                                </div> 
+                            </div>
+                            
+                        </li>
+                    </ul>
                 </div>
-                <div class="product">
-                    <div class="product-tool">
-                        <div class="change-hover-hot" style="position: absolute;">
-                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                        </div>
-                        <img src="img/flycam.png" alt="Loading...">
-                    </div>
-                    <div class="price"> 
-                        <h3 class="price-sale">$169.95</h3>
-                        <strike class="price-cost">$269.00</strike>
-                    </div>  
-                    <div class="info">
-                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                    </div> 
-                </div>
-                <div class="product">
-                    <div class="product-tool">
-                        <div class="change-hover-hot" style="position: absolute;">
-                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                        </div>
-                        <img src="img/flycam.png" alt="Loading...">
-                    </div>
-                    <div class="price"> 
-                        <h3 class="price-sale">$169.95</h3>
-                        <strike class="price-cost">$269.00</strike>
-                    </div>  
-                    <div class="info">
-                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                    </div> 
-                </div>
-                <div class="product">
-                    <div class="product-tool">
-                        <div class="change-hover-hot" style="position: absolute;">
-                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                        </div>
-                        <img src="img/flycam.png" alt="Loading...">
-                    </div>
-                    <div class="price"> 
-                        <h3 class="price-sale">$169.95</h3>
-                        <strike class="price-cost">$269.00</strike>
-                    </div>  
-                    <div class="info">
-                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                    </div> 
-                </div>
-                <div class="product">
-                    <div class="product-tool">
-                        <div class="change-hover-hot" style="position: absolute;">
-                            <a href=""><i class="fa-regular fa-heart"></i></a>
-                            <a href=""><i class="fa-solid fa-arrow-right-arrow-left"></i></a>
-                        </div>
-                        <img src="img/flycam.png" alt="Loading...">
-                    </div>
-                    <div class="price"> 
-                        <h3 class="price-sale">$169.95</h3>
-                        <strike class="price-cost">$269.00</strike>
-                    </div>  
-                    <div class="info">
-                        <p>Hover Camera Passport Personal Photogragrapher</p>
-                    </div> 
-                </div>
-                
-            </div>
-        </div> -->
+            </section>  
+        </div>
        
         <!-- On Sale Products -->
         <div class="row on-sale-producs">
@@ -964,10 +969,22 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="./lib/slider/js/splide.min.js"></script>
     <script type="text/javascript" src="./js/time.js"></script>
+    <script type="text/javascript" src="./js/slider.js"></script>
+    <script type="text/javascript" src="./js/count.js"></script>
     <script src="./js/zoom.js"></script>
     <script>
           $(document).ready(function(){
            $('.sub-menu').parent('li').addClass('has-child')
           })
     </script>
+
+<script>
+    var splide = new Splide('.splide', {
+        type: 'loop',
+        perPage: 1,
+        focus: 0,
+});
+    splide.mount();   
+
+</script>
 
