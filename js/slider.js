@@ -23,7 +23,7 @@ new Splide('#splide-deal-month', {
 new Splide('#list-splide-deal-month', {
   pagination: true,
   lazyLoad: true,
-  type: 'loop',
+  // type: 'loop',
   classes: {
     arrows: "control-arrows",
     arrow: "splide__arrow control-arrow",
